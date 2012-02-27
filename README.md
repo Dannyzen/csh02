@@ -1,4 +1,7 @@
 
+CS for Hackers
+==============
+
 Course intro 
 ------------
 
