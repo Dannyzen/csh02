@@ -1,7 +1,7 @@
 CS for Hackers
 ==============
 
-# Course intro
+## Course intro
 
 Goal: give you a map of the big ideas in computer science.  Selected some, but
 not all topics, based on what we thought is useful.
@@ -10,7 +10,7 @@ Reasoning: since you're hackers already, let's take an ordered approach, since
 we don't have to teach you the basics of programming. Different from how a
 university would approach it:
 
-## week-0/systems-architecture
+### week-0/systems-architecture
 
 Have to know the hardware in order to understand how the software behaves. This
 will be a theme through the rest of the class, and we'll come back to the
@@ -24,7 +24,7 @@ Instructor
 Location
 :   GeneralAssemb.ly
 
-## week-1/operating-systems
+### week-1/operating-systems
 
 How does software make use of the hardware? What facilities does the OS offer
 and how do our favoraite languges/libraries make use of them?
@@ -34,8 +34,8 @@ Instructor
 Location
 :   GeneralAssemb.ly
 
-## week-2/data-structures-and-algorithms 
-## week-3/data-structures-and-algorithms
+### week-2/data-structures-and-algorithms 
+### week-3/data-structures-and-algorithms
 
 Given finite time and space in the hardware, how do we effectively get stuff
 done? This is the collected wisdom of systems builders over 59 years (for hash
@@ -46,7 +46,7 @@ Instructors
 Location
 :   Bloomberg
 
-## week-4/theory-of-computation
+### week-4/theory-of-computation
 
 Theory of computation: Beyond our finite hardware, what is computable or not?
 What general things can we learn about how hard problems are? How can we know?
@@ -58,7 +58,7 @@ Instructor
 Location
 :   GeneralAssemb.ly
 
-## week-5/programming-languages-theory
+### week-5/programming-languages-theory
 
 Great, we know what is computable, but what forms of expression are useful in
 translating our desires so machines can carry them out? Topics: Historical
@@ -69,16 +69,17 @@ Location
 :   GeneralAssemb.ly
 
  
-## week-6/programming-languages-implementation
+### week-6/programming-languages-implementation
 
-lexing, parsing, optimization, JIT, etc.es into programs?  
+What's involved in implementing a programming language? Topics: lexing,
+parsing, optimization, JIT, etc.
 
 Instructor
 :   Heewa Barfchin (Chartbeat)
 Location
 :   GeneralAssemb.ly
 
-## week-7/concurrency
+### week-7/concurrency
 
 What happened to Moore's Law? How do we keep making performance progress in the
 face of core limits? Topics: shared memory models, threads, locking, actor
@@ -91,8 +92,8 @@ Location
 :    GeneralAssemb.ly
 
 
-## week-8/machine-learning 
-## week-9/machine-learning
+### week-8/machine-learning 
+### week-9/machine-learning
 
 Machine learning: How do we get computers to figure out the structure of
 problems for us? Can computers deliver insights to us, rather than the other
@@ -104,19 +105,19 @@ Location
 :    GeneralAssemb.ly
 
 
-# Class Format
+## Class Format
 
-## Wednesday
+### Wednesday
 - hour 0 - Lab: Demo project from previous week to TA/Instructor (first class,
   go over syllabus instead).
 - hour 1 - Lecture part 1, introduce next week's assignment.
 
-## Monday
+### Monday
 - hour 2 - Lecture part 2
 - hour 3 - Lab: Work on hacking challenge, ask questions of TA/Instructor.
   Cover additional topics requested by students.
 
-# Hacking Challenges
+## Hacking Challenges
 
 This course has assignments. Since we're all hackers, we'll use this fact to
 help us learn. These are not hand-holding homeworks like you might have had in
@@ -129,7 +130,7 @@ Assignments are given out at the end of class, and you have until the beginning
 of the next lecture to turn them in.  Might be good to take advantage of the
 weekend in-between!
 
-# TAs
+## TAs
 
 There are one or more TAs to help you with understanding the assignments.
 They've solved the problem in their own way, and have a solid backround in CS.
