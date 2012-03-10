@@ -10,7 +10,7 @@ Reasoning: since you're hackers already, let's take an ordered approach, since
 we don't have to teach you the basics of programming. Different from how a
 university would approach it:
 
-### week-0/systems-architecture
+### Week 0 - Systems Architecture
 
 Have to know the hardware in order to understand how the software behaves. This
 will be a theme through the rest of the class, and we'll come back to the
@@ -24,7 +24,7 @@ Instructor
 Location
 :   GeneralAssemb.ly
 
-### week-1/operating-systems
+### Week 1 - Operating Systems
 
 How does software make use of the hardware? What facilities does the OS offer
 and how do our favoraite languges/libraries make use of them?
@@ -34,8 +34,8 @@ Instructor
 Location
 :   GeneralAssemb.ly
 
-### week-2/data-structures-and-algorithms 
-### week-3/data-structures-and-algorithms
+### Week 2 - Data Structures and Algorithms 
+### Week 3 - Data Structures and Algorithms
 
 Given finite time and space in the hardware, how do we effectively get stuff
 done? This is the collected wisdom of systems builders over 59 years (for hash
@@ -46,7 +46,7 @@ Instructors
 Location
 :   Bloomberg
 
-### week-4/theory-of-computation
+### Week 4 - Theory of Computation
 
 Theory of computation: Beyond our finite hardware, what is computable or not?
 What general things can we learn about how hard problems are? How can we know?
@@ -58,7 +58,7 @@ Instructor
 Location
 :   GeneralAssemb.ly
 
-### week-5/programming-languages-theory
+### Week 5 - Programming Languages Theory
 
 Great, we know what is computable, but what forms of expression are useful in
 translating our desires so machines can carry them out? Topics: Historical
@@ -69,7 +69,7 @@ Location
 :   GeneralAssemb.ly
 
  
-### week-6/programming-languages-implementation
+### Week 6 - Programming Languages Implementation
 
 What's involved in implementing a programming language? Topics: lexing,
 parsing, optimization, JIT, etc.
@@ -79,7 +79,7 @@ Instructor
 Location
 :   GeneralAssemb.ly
 
-### week-7/concurrency
+### Week 7 - Concurrency and the failure of Moore's Law
 
 What happened to Moore's Law? How do we keep making performance progress in the
 face of core limits? Topics: shared memory models, threads, locking, actor
@@ -92,8 +92,8 @@ Location
 :    GeneralAssemb.ly
 
 
-### week-8/machine-learning 
-### week-9/machine-learning
+### Week 8 - Machine Learning 
+### Week 9 - Machine Learning
 
 Machine learning: How do we get computers to figure out the structure of
 problems for us? Can computers deliver insights to us, rather than the other
