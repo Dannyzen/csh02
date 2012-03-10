@@ -6,56 +6,119 @@ CS for Hackers
 Goal: give you a map of the big ideas in computer science.  Selected some, but
 not all topics, based on what we thought is useful.
 
-Reasoning: since you’re hackers already, let’s take an ordered approach, since
-we don’t have to teach you the basics of programming. Different from how a
+Reasoning: since you're hackers already, let's take an ordered approach, since
+we don't have to teach you the basics of programming. Different from how a
 university would approach it:
 
-- Systems Architecture: Have to know the hardware in order to understand how
-  the software behaves. This will be a theme through the rest of the class, and
-  we’ll come back to the points we learn tonight.  
-- Operating Systems: How does software make use of the hardware?
-- Data structures: Given finite time and space in the hardware, how do we
-  effectively get stuff done? This is the collected wisdom of systems builders
-  over 59 years (for hash tables, 57 for linked lists, or 170 years, depending
-  on how you count).  
-- Theory of computation: Beyond our finite hardware, what is computable or not?
-  What general things can we learn about how hard problems are? How can we
-  know?  
-- Programming Languages: Great, we know what is computable, but what is useful
-  in translating our desires into programs?  
-- Concurrency: What happened to Moore’s Law? How do we keep making performance
-  progress in the face of single core limits?  
-- Machine learning: How do we get computers to figure out the structure of
-  problems for us? Can computers deliver insights to us, rather than the other
-  way around?
+## week-0/systems-architecture
 
-(From Quora)
+Have to know the hardware in order to understand how the software behaves. This
+will be a theme through the rest of the class, and we'll come back to the
+points we learn this week. Topics: Binary logic and the physics of
+implementation, parts of a computer and how they interact, understanding the
+speed order of magnitude of each part, computing as a hierarchy of caches,
+cache locality.
 
-- Systems Architecture (Binary logic and the physics of implementation, parts
-  of a computer and how they interact, understanding the speed order of
-  magnitude of each part, computing as a hierarchy of caches, cache locality.)
-  [1 week]
-- Operating Systems (The kernel: abstracting hardware into useful services,
-  POSIX and how does it relates to the standard libraries of your favorite
-  programming language.) [1 week]
-- Data Structures and Algorithms (A compressed version of your standard data
-  structures/algorithms class, taught by Bloomberg instructors.) [2 weeks]
-- Decidability and tractability (Formal models of computing, Complexity Theory,
-  important complexity classes, and reductions to known problems.) [1 week]
-- Programming Languages (Historical problems and the language features that
-  solve them, type systems, polymorphism, higher order functions, scope and
-  closure, type safety, lexing, parsing, optimization, JIT, etc.) [2 weeks]
-- Special topic: Concurrency (The failure of Moore's Law, shared memory models,
-  Threads, locking, actor models, the c10k problem, asynchronous IO, vector
-  clocks, consensus algorithms, etc.) [1 week]
-- Special topics: Artificial Intelligence and Machine Learning (State spaces
-  and search, probability and bayes networks, planning, supervised learning,
-  regression, overfitting, unsupervised learning, reinforcement learning) [2
-  weeks]
+Instructor
+:   Ryan Witt (Opani)
+Location
+:   GeneralAssemb.ly
+
+## week-1/operating-systems
+
+How does software make use of the hardware? What facilities does the OS offer
+and how do our favoraite languges/libraries make use of them?
+
+Instructor
+:   Heewa Barfchin (Chartbeat)
+Location
+:   GeneralAssemb.ly
+
+## week-2/data-structures-and-algorithms 
+## week-3/data-structures-and-algorithms
+
+Given finite time and space in the hardware, how do we effectively get stuff
+done? This is the collected wisdom of systems builders over 59 years (for hash
+tables, 57 for linked lists, or 170 years from the first program).
+
+Instructors
+:   Tom Arcidiacono (Bloomberg), Detlef Ronneburger (Bloomberg)
+Location
+:   Bloomberg
+
+## week-4/theory-of-computation
+
+Theory of computation: Beyond our finite hardware, what is computable or not?
+What general things can we learn about how hard problems are? How can we know?
+Topics: Formal models of computing, Complexity Theory, important complexity
+classes, and reductions to known problems. 
+
+Instructor
+:   Jon Napolitano (Google)
+Location
+:   GeneralAssemb.ly
+
+## week-5/programming-languages-theory
+
+Great, we know what is computable, but what forms of expression are useful in
+translating our desires so machines can carry them out? Topics: Historical
+problems and the language features that solve them. Type, scope, closure,
+dynamism, polymorphism, higher order functions, optimizations, JIT, etc.
+
+Location
+:   GeneralAssemb.ly
+
+ 
+## week-6/programming-languages-implementation
+
+lexing, parsing, optimization, JIT, etc.es into programs?  
+
+Instructor
+:   Heewa Barfchin (Chartbeat)
+Location
+:   GeneralAssemb.ly
+
+## week-7/concurrency
+
+What happened to Moore's Law? How do we keep making performance progress in the
+face of core limits? Topics: shared memory models, threads, locking, actor
+models, the c10k problem, asynchronous IO, vector clocks, consensus algorithms,
+etc.
+
+Instructor
+:    Ryan Witt (Opani)
+Location
+:    GeneralAssemb.ly
+
+
+## week-8/machine-learning 
+## week-9/machine-learning
+
+Machine learning: How do we get computers to figure out the structure of
+problems for us? Can computers deliver insights to us, rather than the other
+way around?  Topics: Artificial Intelligence and Machine Learning (State spaces
+and search, probability and bayes networks, planning, supervised learning,
+regression, overfitting, unsupervised learning, reinforcement learning)
+
+Location
+:    GeneralAssemb.ly
+
+
+# Class Format
+
+## Wednesday
+- hour 0 - Lab: Demo project from previous week to TA/Instructor (first class,
+  go over syllabus instead).
+- hour 1 - Lecture part 1, introduce next week's assignment.
+
+## Monday
+- hour 2 - Lecture part 2
+- hour 3 - Lab: Work on hacking challenge, ask questions of TA/Instructor.
+  Cover additional topics requested by students.
 
 # Hacking Challenges
 
-This course has assignments. Since we’re all hackers, we’ll use this fact to
+This course has assignments. Since we're all hackers, we'll use this fact to
 help us learn. These are not hand-holding homeworks like you might have had in
 college, they are challenges designed to help you really understand what we are
 discussing in class. They will test your creativity and ingenuity, rather than
@@ -69,6 +132,6 @@ weekend in-between!
 # TAs
 
 There are one or more TAs to help you with understanding the assignments.
-They’ve solved the problem in their own way, and have a solid backround in CS.
-They’ll help you think through the problem (but not complete the challenge for
+They've solved the problem in their own way, and have a solid backround in CS.
+They'll help you think through the problem (but not complete the challenge for
 you).
