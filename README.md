@@ -13,19 +13,9 @@ Reasoning: since you're hackers already, let's take an ordered approach, since
 we don't have to teach you the basics of programming. Different from how a
 university would approach it:
 
-### Week 1 - Systems Architecture
+## Weeks
 
-Have to know the hardware in order to understand how the software behaves. This
-will be a theme through the rest of the class, and we'll come back to the
-points we learn this week. Topics: Binary logic and the physics of
-implementation, parts of a computer and how they interact, understanding the
-speed order of magnitude of each part, computing as a hierarchy of caches,
-cache locality.
-
-Instructor
-:   Ryan Witt (Opani)
-Location
-:   Village Ventures
+1. [Week 1 - Systems Architecture](https://github.com/generalassembly/cs-for-hackers/tree/master/week-01)
 
 ### Week 2 - Operating Systems
 
