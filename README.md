@@ -101,14 +101,13 @@ Location
 ## Class Format
 
 ### Wednesday
-- hour 0 - Lab: Demo project from previous week to TA/Instructor (first class,
-  go over syllabus instead).
-- hour 1 - Lecture part 1, introduce next week's assignment.
+- hour 1 - Lecture part 1
+- hour 2 - Lab: Work on hacking challenge, ask questions of TA/Instructor.
+  Cover additional topics requested by students.
 
 ### Monday
-- hour 2 - Lecture part 2
-- hour 3 - Lab: Work on hacking challenge, ask questions of TA/Instructor.
-  Cover additional topics requested by students.
+- hour 3 - Lab: Demo project from previous week to TA/Instructor
+- hour 4 - Lecture part 2, introduce next week's assignment.
 
 ## Hacking Challenges
 
