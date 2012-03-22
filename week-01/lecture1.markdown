@@ -48,7 +48,7 @@ style="max-height: 80%; max-width: 80%;"
 
 # Another computer
 
-<img src="img/binary_adder.jpg"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/binary_adder.jpg"
 style="max-height: 80%; max-width: 80%;">
 
 <http://onecreativeblog.com/post/8785145888/>
@@ -60,9 +60,6 @@ style="max-height: 80%; max-width: 80%;">
 - ...stay tuned for week 5 :)
 - A computer can take many forms <sup>1</sup>
 - But we'll focus on the one's we're familiar with (based on digital logic).
-
-<!-- phone, laptop, desktop -->
-
 
 [1] <http://consc.net/papers/rock.html> "Does a Rock Implement Every Finite-State Automaton?" David Chalmers
 
@@ -169,16 +166,18 @@ Some traditional names:
 
 # Circuits and Truth tables
 
-![](img/Components.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/Components.png)
 
 
 ----
 
 # AND
 
+```c
     // in c
     c = a && b; // logical
     c = a & b;  // bitwise (logical, but 1 bit at a time)
+```
 
 <table style="float:left">
 <tr><th>A<th>B</th><th>AND</th>
@@ -188,7 +187,7 @@ Some traditional names:
 <tr><td>1</td><td>1</td><td>1</td></tr>
 </table>
 
-![](img/AND.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/AND.png)
 
 
 Quick Quiz: What is 1010 & 1100?
@@ -197,9 +196,11 @@ Quick Quiz: What is 1010 & 1100?
 
 # OR
 
+```c
     // in c
     c = a || b; // logical
     c = a | b;  // bitwise (logical, but 1 bit at a time)
+```
 
 <table style="float:left">
 <tr><th>A<th>B</th><th>OR</th>
@@ -209,15 +210,17 @@ Quick Quiz: What is 1010 & 1100?
 <tr><td>1</td><td>1</td><td>1</td></tr>
 </table>
 
-![](img/OR.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/OR.png)
 
 ----
 
 # XOR (Exclusive OR)
 
+```c
     // in c
     c = a ^ b; // bitwise
     // no logical operator, but you can do !a != !b
+```
 
 <table style="float:left">
 <tr><th>A<th>B</th><th>XOR</th>
@@ -227,7 +230,7 @@ Quick Quiz: What is 1010 & 1100?
 <tr><td>1</td><td>1</td><td>0</td></tr>
 </table>
 
-![](img/XOR.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/XOR.png)
 
 ----
 
@@ -249,7 +252,7 @@ Quick Quiz: What is 1010 & 1100?
 <tr><td>1</td><td>1</td><td>0</td><td>1</td></tr>
 </table>
 
-![](img/Half%20Adder.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/Half%20Adder.png)
 
 - Does the C column look familiar?
 - Does the carry column look familiar?
@@ -270,7 +273,7 @@ Quick Quiz: What is 1010 & 1100?
 <tr><td>1</td><td>1</td><td>1</td><td>?</td><td>?</td></tr>
 </table>
 
-<img src="img/Full%20Adder.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/Full%20Adder.png"
 style="max-height: 60%; max-width: 80%;">
 
 ----
@@ -291,15 +294,15 @@ style="max-height: 60%; max-width: 80%;">
 <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
 </table>
 
-<img src="img/Full%20Adder.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/Full%20Adder.png"
 style="max-height: 60%; max-width: 80%;">
 
 ----
 # Chained Full Adder
 
-![](img/adder-chain.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/adder-chain.png)
 
-<img src="img/binary_adder.jpg"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/binary_adder.jpg"
 style="max-height: 40%; max-width: 80%;">
 
 
@@ -307,7 +310,7 @@ style="max-height: 40%; max-width: 80%;">
 
 # Multiplexer (Mux)
 
-<img src="img/Multiplexer.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/Multiplexer.png"
 style="max-height: 80%; max-width: 80%;">
 
 
@@ -315,14 +318,14 @@ style="max-height: 80%; max-width: 80%;">
 
 # Demux/Decoder
 
-<img src="img/Demux.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/Demux.png"
 style="max-height: 80%; max-width: 80%;">
 
 ----
 
 # Basic memory (Latch)
 
-<img src="img/D-LATCH.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/D-LATCH.png"
 style="max-height: 80%; max-width: 80%;">
 
 - Fast
@@ -332,7 +335,7 @@ style="max-height: 80%; max-width: 80%;">
 
 # Not-so basic memory
 
-<img src="img/DRAM.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/DRAM.png"
 style="max-height: 80%; max-width: 80%;">
 
 - Dense
@@ -354,21 +357,21 @@ style="max-height: 80%; max-width: 80%;">
 
 # The ALU (Arithmetic logic unit)
 
-<img src="img/ALU.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/ALU.png"
 style="max-height: 90%; max-width: 80%;">
 
 ----
 
 # A "Real" ALU
 
-<img src="img/1-Bit%20ALU.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/1-Bit%20ALU.png"
 style="max-height: 80%; max-width: 80%;">
 
 ----
 
 # The Von Neumann Machine
 
-<img src="img/von-neumann.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/von-neumann.png"
 style="max-height: 90%; max-width: 80%;">
 
 ----
