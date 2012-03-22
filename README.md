@@ -25,7 +25,7 @@ cache locality.
 Instructor
 :   Ryan Witt (Opani)
 Location
-:   GeneralAssemb.ly
+:   Village Ventures
 
 ### Week 2 - Operating Systems
 
@@ -35,7 +35,7 @@ and how do our favoraite languges/libraries make use of them?
 Instructor
 :   Heewa Barfchin (Chartbeat)
 Location
-:   GeneralAssemb.ly
+:   Village Ventures
 
 ### Week 3 - Data Structures and Algorithms 
 ### Week 4 - Data Structures and Algorithms
