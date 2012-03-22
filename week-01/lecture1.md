@@ -10,6 +10,12 @@ We'll be traveling from the physical to the essense of a working computer in 1 h
 
 This may be review for some of you, but bear with it and make sure you understand it.
 
+## Circuits
+
+We'll also look at a bunch of digital logic circuits. You can download and play with
+them using [iCircuit](http://icircuitapp.com/), PSPICE, or any program supporting the
+`.cir` format.
+
 <style>
 td, th { padding: 5px; }
 table { padding: 0 20px; }
@@ -48,7 +54,7 @@ style="max-height: 80%; max-width: 80%;"
 
 # Another computer
 
-<img src="img/binary_adder.jpg"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/binary-adder.jpg"
 style="max-height: 80%; max-width: 80%;">
 
 <http://onecreativeblog.com/post/8785145888/>
@@ -58,11 +64,8 @@ style="max-height: 80%; max-width: 80%;">
 # So... what is a computer?
 
 - ...stay tuned for week 5 :)
-- A computer can take many forms <sup>1</sup>
+- A computer have many implementations from the physical world<sup>1</sup>.
 - But we'll focus on the one's we're familiar with (based on digital logic).
-
-<!-- phone, laptop, desktop -->
-
 
 [1] <http://consc.net/papers/rock.html> "Does a Rock Implement Every Finite-State Automaton?" David Chalmers
 
@@ -169,16 +172,18 @@ Some traditional names:
 
 # Circuits and Truth tables
 
-![](img/Components.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/components.png)
 
 
 ----
 
 # AND
 
+```c
     // in c
     c = a && b; // logical
     c = a & b;  // bitwise (logical, but 1 bit at a time)
+```
 
 <table style="float:left">
 <tr><th>A<th>B</th><th>AND</th>
@@ -188,7 +193,8 @@ Some traditional names:
 <tr><td>1</td><td>1</td><td>1</td></tr>
 </table>
 
-![](img/AND.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/and.png)
+[download circuit](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/circuits/and.cir)
 
 
 Quick Quiz: What is 1010 & 1100?
@@ -197,9 +203,11 @@ Quick Quiz: What is 1010 & 1100?
 
 # OR
 
+```c
     // in c
     c = a || b; // logical
     c = a | b;  // bitwise (logical, but 1 bit at a time)
+```
 
 <table style="float:left">
 <tr><th>A<th>B</th><th>OR</th>
@@ -209,15 +217,18 @@ Quick Quiz: What is 1010 & 1100?
 <tr><td>1</td><td>1</td><td>1</td></tr>
 </table>
 
-![](img/OR.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/or.png)
+[download circuit](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/circuits/or.cir)
 
 ----
 
 # XOR (Exclusive OR)
 
+```c
     // in c
     c = a ^ b; // bitwise
     // no logical operator, but you can do !a != !b
+```
 
 <table style="float:left">
 <tr><th>A<th>B</th><th>XOR</th>
@@ -227,7 +238,8 @@ Quick Quiz: What is 1010 & 1100?
 <tr><td>1</td><td>1</td><td>0</td></tr>
 </table>
 
-![](img/XOR.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/xor.png)
+[download circuit](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/circuits/xor.cir)
 
 ----
 
@@ -249,7 +261,8 @@ Quick Quiz: What is 1010 & 1100?
 <tr><td>1</td><td>1</td><td>0</td><td>1</td></tr>
 </table>
 
-![](img/Half%20Adder.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/half-adder.png)
+[download circuit](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/circuits/half-adder.cir)
 
 - Does the C column look familiar?
 - Does the carry column look familiar?
@@ -270,7 +283,7 @@ Quick Quiz: What is 1010 & 1100?
 <tr><td>1</td><td>1</td><td>1</td><td>?</td><td>?</td></tr>
 </table>
 
-<img src="img/Full%20Adder.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/full-adder.png"
 style="max-height: 60%; max-width: 80%;">
 
 ----
@@ -291,15 +304,16 @@ style="max-height: 60%; max-width: 80%;">
 <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
 </table>
 
-<img src="img/Full%20Adder.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/full-adder.png"
 style="max-height: 60%; max-width: 80%;">
+[download circuit](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/circuits/full-adder.cir)
 
 ----
 # Chained Full Adder
 
-![](img/adder-chain.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/adder-chain.png)
 
-<img src="img/binary_adder.jpg"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/binary-adder.jpg"
 style="max-height: 40%; max-width: 80%;">
 
 
@@ -307,33 +321,46 @@ style="max-height: 40%; max-width: 80%;">
 
 # Multiplexer (Mux)
 
-<img src="img/Multiplexer.png"
+Selects between multiple inputs.
+
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/multiplexer.png"
 style="max-height: 80%; max-width: 80%;">
+
+[download circuit](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/circuits/multiplexer.cir)
 
 
 ----
 
 # Demux/Decoder
 
-<img src="img/Demux.png"
+Selects between multiple outputs for a given input.
+
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/demux.png"
 style="max-height: 80%; max-width: 80%;">
+
+[download circuit](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/circuits/demux.cir)
 
 ----
 
 # Basic memory (Latch)
 
-<img src="img/D-LATCH.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/d-latch.png"
 style="max-height: 80%; max-width: 80%;">
+
+[download circuit](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/circuits/d-latch.cir)
 
 - Fast
 - Used for registers, cache 
+
 
 ----
 
 # Not-so basic memory
 
-<img src="img/DRAM.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/dram.png"
 style="max-height: 80%; max-width: 80%;">
+
+[download circuit](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/circuits/dram.cir)
 
 - Dense
 - Slow
@@ -354,21 +381,23 @@ style="max-height: 80%; max-width: 80%;">
 
 # The ALU (Arithmetic logic unit)
 
-<img src="img/ALU.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/alu.png"
 style="max-height: 90%; max-width: 80%;">
 
 ----
 
 # A "Real" ALU
 
-<img src="img/1-Bit%20ALU.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/1-bit-alu.png"
 style="max-height: 80%; max-width: 80%;">
+
+[download circuit](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/circuits/1-bit-alu.cir)
 
 ----
 
 # The Von Neumann Machine
 
-<img src="img/von-neumann.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/von-neumann.png"
 style="max-height: 90%; max-width: 80%;">
 
 ----
@@ -376,6 +405,7 @@ style="max-height: 90%; max-width: 80%;">
 # Execution cycle
 
 
+```python
     #!/usr/bin/env python
 
     program_counter = 0
@@ -391,6 +421,7 @@ style="max-height: 90%; max-width: 80%;">
         instruction = memory[program_counter]
         data = memory[get_data_address(instruction)]
         execute(instruction, data)
+```
         
 
 ----
@@ -398,17 +429,22 @@ style="max-height: 90%; max-width: 80%;">
 # How instructions look
 
 
+```c
     // c
     c = a + b;
     if (c != 10) {
         do_something();
     }
+```
 
+```assembly
     // assembly
     add eax, ebx;
     sub eax, 10;
     jnz 0x42;
+```
 
+```
     // machine code
     0011 0000 0001
     0100 0000 1010
@@ -416,6 +452,7 @@ style="max-height: 90%; max-width: 80%;">
      ^     |   | 
     opcode |   ^ operand
            ^ operand
+```
 
 - Wire up the opcode to the ALU selector
 - (The machine code is actually BS, don't feed it to a computer.)
@@ -424,18 +461,22 @@ style="max-height: 90%; max-width: 80%;">
 
 # Playing Computer
 
+```c
     // c
     int a = 5, b = 1;
     start:
     a = a + a;
     a = a + b;
     goto start;
+```
 
+``` assembly
     // assembly
     nop;
     add A, A;
     add A, B;
     mv  PC, B;
+```
 
 <table style="float:left">
 <tr><th>Instruction</th><th>Action</th><th>Opcode</th></tr>
