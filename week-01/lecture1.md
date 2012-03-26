@@ -545,6 +545,61 @@ style="max-height: 90%; max-width: 80%;">
 
 ----
 
+# Playing Computer (Answer!)
+
+First, it is easier to see what is going on if we translate the contents of
+memory (the program that is going to execute) into a format that we can read
+more easily. Here, I just translate the binary codes and put a comma between
+the operands, which is how most assembly language looks:
+
+<table style="float:left">
+<tr><th>Memory Address</th><th>Contents</th></tr>
+<tr><td>0000</td><td>xor PC, PC;  # whoa, this is a crazy instruction!</td></tr>
+<tr><td>0001</td><td>nop;  # nop does not have operands</td></tr>
+<tr><td>0010</td><td>add A, B; # A <- A + B</td></tr>
+<tr><td>0011</td><td>and B, A; # B <- B & A</td></tr>
+</table>
+
+Second, notice that your esteemed instructor has plaid a practical joke on
+you! The program counter is set to `0010` (2 in decimal), which means that
+that the crazy instruction at the beginning does not matter! The moral of 
+this story is, watch out for people from Caltech, because they are notorious
+pranksters (ever heard of Richard Feynman? he would pick your safe!).
+
+<table style="float:left">
+<tr><th>Register</th><th>Index</th><th>Contents</th></tr>
+<tr><td>A</td><td>0000</td><td>0001</td></tr>
+<tr><td>B</td><td>0001</td><td>0101</td></tr>
+<tr><td>PC</td><td>0010</td><td>**0010**</td></tr>
+</table>
+
+So, starting off from memory location 0010 (2), we have the following instructions:
+
+
+```
+    add A, B; # add the contents of B to the contents of A, store in A
+    and B, A; # and the contents of A with the contents of B, store in B
+```
+
+We can carry them out by hand (it might be helpful to refer to the truth table for
+addition and AND):
+
+```
+      0001 A
+    + 0101 B
+    ------
+      0110 A 
+
+      0110 A 
+    & 0101 B
+    ------
+      0100 B
+```
+
+W00t! Violá! QED. &#8718;. We have our answer:
+
+> What is the value of register B by the end of the program? **0100** or **5**
+
 ----
 
 # Next Time (Monday)
