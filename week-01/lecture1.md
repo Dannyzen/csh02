@@ -486,9 +486,9 @@ style="max-height: 90%; max-width: 80%;">
 <tr><td>and</td><td>X = X & Y</td><td>0011</td></tr>
 <tr><td>or</td><td>X = X | Y</td><td>0100</td></tr>
 <tr><td>xor</td><td>X = X ^ Y</td><td>0101</td></tr>
-<tr><td>mv</td><td>X = Y</td><td>0101</td></tr>
-<tr><td>load</td><td>X = MEM</td><td>0110</td></tr>
-<tr><td>store</td><td>MEM = X</td><td>0111</td></tr>
+<tr><td>mv</td><td>X = Y</td><td>0110</td></tr>
+<tr><td>load</td><td>X = MEM</td><td>0111</td></tr>
+<tr><td>store</td><td>MEM = X</td><td>1000</td></tr>
 </table>
 
 <table style="float:left">
@@ -523,9 +523,9 @@ style="max-height: 90%; max-width: 80%;">
 <tr><td>and</td><td>X = X & Y</td><td>0011</td></tr>
 <tr><td>or</td><td>X = X | Y</td><td>0100</td></tr>
 <tr><td>xor</td><td>X = X ^ Y</td><td>0101</td></tr>
-<tr><td>mv</td><td>X = Y</td><td>0101</td></tr>
-<tr><td>load</td><td>X = MEM</td><td>0110</td></tr>
-<tr><td>store</td><td>MEM = X</td><td>0111</td></tr>
+<tr><td>mv</td><td>X = Y</td><td>0110</td></tr>
+<tr><td>load</td><td>X = MEM</td><td>0111</td></tr>
+<tr><td>store</td><td>MEM = X</td><td>1000</td></tr>
 </table>
 
 <table style="float:left">
