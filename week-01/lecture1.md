@@ -556,21 +556,22 @@ the operands, which is how most assembly language looks:
 <tr><th>Memory Address</th><th>Contents</th></tr>
 <tr><td>0000</td><td>xor PC, PC;  # whoa, this is a crazy instruction!</td></tr>
 <tr><td>0001</td><td>nop;  # nop does not have operands</td></tr>
-<tr><td>0010</td><td>add A, B; # A <- A + B</td></tr>
-<tr><td>0011</td><td>and B, A; # B <- B & A</td></tr>
+<tr><td>0010</td><td>add A, B; # A = A + B</td></tr>
+<tr><td>0011</td><td>and B, A; # B = B & A</td></tr>
 </table>
 
 Second, notice that your esteemed instructor has plaid a practical joke on
 you! The program counter is set to `0010` (2 in decimal), which means that
 that the crazy instruction at the beginning does not matter! The moral of 
 this story is, watch out for people from Caltech, because they are notorious
-pranksters (ever heard of Richard Feynman? he would pick your safe!).
+pranksters (Ever heard of [Richard Feynman](http://en.wikipedia.org/wiki/Richard_Feynman)?
+He might have picked the combo to your safe, instead!).
 
 <table style="float:left">
 <tr><th>Register</th><th>Index</th><th>Contents</th></tr>
 <tr><td>A</td><td>0000</td><td>0001</td></tr>
 <tr><td>B</td><td>0001</td><td>0101</td></tr>
-<tr><td>PC</td><td>0010</td><td>**0010**</td></tr>
+<tr><td>PC</td><td>0010</td><td>0010 # what?? a trick!</td></tr>
 </table>
 
 So, starting off from memory location 0010 (2), we have the following instructions:
