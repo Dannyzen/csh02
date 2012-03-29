@@ -18,7 +18,7 @@ table { padding: 0 20px; }
 
 # A "Real" ALU
 
-<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/class-01/img/1-bit-alu.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/1-bit-alu.png"
 style="max-height: 80%; max-width: 80%;">
 
 [download circuit](https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/circuits/1-bit-alu.cir)
@@ -27,7 +27,7 @@ style="max-height: 80%; max-width: 80%;">
 
 # The Von Neumann Machine
 
-<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/class-01/img/von-neumann.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/von-neumann.png"
 style="max-height: 90%; max-width: 80%;">
 
 ----
@@ -126,7 +126,7 @@ W00t! Violá! QED. &#8718;. We have our answer:
 
 # The Von Neumann Machine
 
-<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/class-01/img/von-neumann.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/von-neumann.png"
 style="max-height: 90%; max-width: 80%;">
 
 - We will zoom out from here.
@@ -135,7 +135,7 @@ style="max-height: 90%; max-width: 80%;">
 
 # A Typical CPU
 
-<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/class-01/img/cpu-layout.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/cpu-layout.png"
 style="max-height: 90%; max-width: 80%;">
 
 <!--
@@ -147,7 +147,7 @@ style="max-height: 90%; max-width: 80%;">
 
 # A Typical System
 
-<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/class-01/img/system-layout.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/system-layout.png"
 style="max-height: 90%; max-width: 80%;">
 
 ----
@@ -176,21 +176,21 @@ Example:
 
 # A Typical System
 
-<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/class-01/img/system-layout.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/system-layout.png"
 style="max-height: 90%; max-width: 80%;">
 
 ----
 
 # How you should actually think of it
 
-<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/class-01/img/orders-of-magnitude.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/orders-of-magnitude.png"
 style="max-height: 90%; max-width: 80%;">
 
 ----
 
 # Orders of magnitude
 
-<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/class-01/img/orders-of-magnitude-anthro.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/orders-of-magnitude-anthro.png"
 style="max-height: 80%; max-width: 80%;">
 
 ----
@@ -342,7 +342,7 @@ Given:
 - The steps happen (or can happen) in *serial*
 - Does this not wake your inner industrialist?
 
-<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/class-01/img/pipeline-overview.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/pipeline-overview.png"
 style="max-height: 90%; max-width: 80%;">
 
 - How long does it take to make a car?
@@ -364,14 +364,14 @@ style="max-height: 90%; max-width: 80%;">
 
 # Pipeline In Context
 
-<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/class-01/img/pipeline-cpu.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/pipeline-cpu.png"
 style="max-height: 90%; max-width: 80%;">
 
 ----
 
 # Pipeline Timeline
 
-<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/class-01/img/pipeline.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/pipeline.png"
 style="max-height: 90%; max-width: 80%;">
 
 Note:
@@ -387,7 +387,7 @@ Note:
 - What happens when you hit a conditional jump?
 - What stage does the conditional jump occur?
 
-<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/class-01/img/pipeline-question.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/pipeline-question.png"
 style="max-height: 90%; max-width: 80%;">
 
 ----
@@ -416,7 +416,7 @@ style="max-height: 90%; max-width: 80%;">
 
 # Second Chance Machine
 
-<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/class-01/img/state-machine.png"
+<img src="https://github.com/generalassembly/cs-for-hackers/raw/master/week-01/img/state-machine.png"
 style="max-height: 90%; max-width: 80%;">
 
 - This is called a state machine.
