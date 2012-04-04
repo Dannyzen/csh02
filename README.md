@@ -15,87 +15,14 @@ university would approach it:
 
 ## Weeks
 
-1. [Week 1 - Systems Architecture](https://github.com/generalassembly/cs-for-hackers/tree/master/week-01)
-
-### Week 2 - Operating Systems
-
-How does software make use of the hardware? What facilities does the OS offer
-and how do our favoraite languges/libraries make use of them?
-
-Instructor
-:   Heewa Barfchin (Chartbeat)
-Location
-:   Village Ventures
-
-### Week 3 - Data Structures and Algorithms 
-### Week 4 - Data Structures and Algorithms
-
-Given finite time and space in the hardware, how do we effectively get stuff
-done? This is the collected wisdom of systems builders over 59 years (for hash
-tables, 57 for linked lists, or 170 years from the first program).
-
-Instructors
-:   Tom Arcidiacono (Bloomberg), Detlef Ronneburger (Bloomberg)
-Location
-:   Bloomberg
-
-### Week 5 - Theory of Computation
-
-Theory of computation: Beyond our finite hardware, what is computable or not?
-What general things can we learn about how hard problems are? How can we know?
-Topics: Formal models of computing, Complexity Theory, important complexity
-classes, and reductions to known problems. 
-
-Instructor
-:   Jon Napolitano (Google)
-Location
-:   GeneralAssemb.ly
-
-### Week 6 - Programming Languages Theory
-
-Great, we know what is computable, but what forms of expression are useful in
-translating our desires so machines can carry them out? Topics: Historical
-problems and the language features that solve them. Type, scope, closure,
-dynamism, polymorphism, higher order functions, optimizations, JIT, etc.
-
-Location
-:   GeneralAssemb.ly
-
- 
-### Week 7 - Programming Languages Implementation
-
-What's involved in implementing a programming language? Topics: lexing,
-parsing, optimization, JIT, etc.
-
-Instructor
-:   Heewa Barfchin (Chartbeat)
-Location
-:   GeneralAssemb.ly
-
-### Week 8 - Concurrency and the failure of Moore's Law
-
-What happened to Moore's Law? How do we keep making performance progress in the
-face of core limits? Topics: shared memory models, threads, locking, actor
-models, the c10k problem, asynchronous IO, vector clocks, consensus algorithms,
-etc.
-
-Instructor
-:    Ryan Witt (Opani)
-Location
-:    GeneralAssemb.ly
-
-
-### Week 9 - Machine Learning 
-### Week 10 - Machine Learning
-
-Machine learning: How do we get computers to figure out the structure of
-problems for us? Can computers deliver insights to us, rather than the other
-way around?  Topics: Artificial Intelligence and Machine Learning (State spaces
-and search, probability and bayes networks, planning, supervised learning,
-regression, overfitting, unsupervised learning, reinforcement learning)
-
-Location
-:    GeneralAssemb.ly
+- [Week 1 - Systems Architecture](https://github.com/generalassembly/cs-for-hackers/tree/master/week-01)
+- [Week 2 - Operating Systems](https://github.com/generalassembly/cs-for-hackers/tree/master/week-02)
+- [Weeks 3/4 - Data Structures and Algorithms](https://github.com/generalassembly/cs-for-hackers/tree/master/week-03)
+- [Week 5 - Theory of Computation](https://github.com/generalassembly/cs-for-hackers/tree/master/week-05)
+- [Week 6 - Theory of Programming Languages](https://github.com/generalassembly/cs-for-hackers/tree/master/week-06)
+- [Week 7 - Implementing Programming Languages](https://github.com/generalassembly/cs-for-hackers/tree/master/week-07)
+- [Week 8 - Concurrency and the failure of Moore's Law](https://github.com/generalassembly/cs-for-hackers/tree/master/week-08)
+- [Weeks 9/10 - Machine Learning](https://github.com/generalassembly/cs-for-hackers/tree/master/week-09)
 
 
 ## Class Format
