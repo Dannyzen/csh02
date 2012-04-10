@@ -128,8 +128,8 @@ I remember Tim Bray had a great perspective on `O(log(n))` algorithms in his
 > upper bound of a few dozen steps will be "good enough" for many real-world
 > scenarios.
 
-This example doesn't really help visualize things, but it does have `O(log(n))`
-performance:
+This example roughly follows the diagram above, and has `O(log(n))`
+time complexity:
 
 ```python
     # Python
