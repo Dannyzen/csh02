@@ -25,9 +25,13 @@ size of the data input at all.
     var first_letter = function(book_as_string) { return book_as_string[0]; }
 ```
 
+Our book here could be 10 characters of 100,000 characters. Returning the first 
+one will always take the same amount of time.
+
 # O(n)
 
-If you touch each peice of data once, your algorithm is `O(n)`, or "linear":
+If you touch each peice of data once, your algorithm is `O(n)`, or "linear". You might
+see this type of algorithm in data processing or in creating a *linear search*:
 
 ```python
     # Python
@@ -92,15 +96,18 @@ If, for each peice of data, you touch *every other* peice of data, you are doing
     }
 ```
 
+The tip-off here is nested for loops. Two forloops over the same variable means
+`O(n^2)`. Three would mean `O(n^3)`.
+
     
 # O(log(n))
 
 Log is often tricky for programmers to understand intuitively. Think of it this
-way: log_2 is the opposite of an exponent like 2^n. 2^n doubles for each n, but
+way: `log_2` is the opposite of an exponent like `2^n`. `2^n` doubles for each `n`, but
 log "undoes" this (`log_2(2^n) == n`).
 
-**Note:** in CS, we almost always mean the base-2 logorithm, but programming
-libraries often supply a base-10 log function. 
+**Note:** in CS, we almost always mean the base-2 logorithm (`log_2`), but programming
+libraries often supply a base-10 `log` function. 
 
 Any algorithm that involves traveling directly to the leaf of a tree from its
 root (like binary search) is going to have `log(n)` performance. Specifically,
@@ -109,8 +116,12 @@ the tree has at each node. This is not magical or surprising, because
 `log_b(n)` is simply the height of a tree with `n` total nodes and `b` branches
 allowed at each node.
 
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-03/binary_tree.png)
+
+Notice if you flatten this tree, it becomes a sorted list. :)
+
 I remember Tim Bray had a great perspective on `O(log(n))` algorithms in his
-*Beautiful Code* chapter titled "Finding Things":
+[Beautiful Code](http://shop.oreilly.com/product/9780596510046.do) chapter "Finding Things":
 
 > On a 32-bit computer, the biggest log_2 you'll ever encounter is 32
 > (simillarly 64 on a 64-bit computer), and any algorithm that completes in an
@@ -136,7 +147,9 @@ performance:
 ```
             
 
-# Visualizing the performance
+# Visualizing performance
+
+([R source code](http://opani.com/ryan/big-o/edit/) and [results](http://opani.com/ryan/big-o/833214592954/results/) available on Opani)
 
 A good way to compare the various complexities is to graph the running time based
 on the input size. Even starting with something small like `n=10`, it is pretty
