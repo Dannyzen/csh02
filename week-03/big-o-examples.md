@@ -1,6 +1,6 @@
 # Big-O notation examples
 
-If you find bugs in these examples, please let me know via pull request. :)
+If you find bugs in these examples, or want to add some in your favorite language, please let me know via pull request. :)
 
 # O(1)
 
