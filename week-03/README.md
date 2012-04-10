@@ -15,3 +15,6 @@ done? This is the collected wisdom of systems builders over the years.
 
 1. [Hacking Challenge](https://github.com/generalassembly/cs-for-hackers/raw/master/week-03/hacking-challenge.pdf)
 
+## Extra Reading
+
+1. [Big-O Examples](https://github.com/generalassembly/cs-for-hackers/blob/master/week-03/big-o-examples.md)
