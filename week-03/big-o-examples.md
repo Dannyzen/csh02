@@ -1,5 +1,7 @@
 # Big-O notation examples
 
+These examples are inspired by Rob Bell's [blog post](http://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/).
+
 If you find bugs in these examples, or want to add some in your favorite language, please let me know via pull request. :)
 
 # O(1)
