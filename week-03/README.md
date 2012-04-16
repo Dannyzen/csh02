@@ -18,3 +18,4 @@ done? This is the collected wisdom of systems builders over the years.
 ## Extra Reading
 
 1. [Big-O Examples](https://github.com/generalassembly/cs-for-hackers/blob/master/week-03/big-o-examples.md)
+2. [State Machines](https://github.com/generalassembly/cs-for-hackers/blob/master/week-03/state-machines.md)
