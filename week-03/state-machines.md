@@ -1,6 +1,7 @@
 # State Machines
 
 Other names:
+
 - FSA (Finite State Automaton, not Flying Spaghetti Monster)
 - Finite State Machine
 
