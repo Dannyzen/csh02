@@ -2,7 +2,7 @@
 
 Other names:
 
-- FSA (Finite State Automaton, not Flying Spaghetti Monster)
+- FSA (Finite State Automaton, not Flying Spaghetti Alien)
 - Finite State Machine
 
 The gist: You can only be in one state at a time, and you have to obey the arrows.
