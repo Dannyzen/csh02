@@ -51,7 +51,7 @@ Quotes are from Mike Vanier's *If programming languages were cars*:
 
 > C is a racing car that goes incredibly fast but breaks down every fifty miles.
 
-    !c
+```c
     void swap(int *a, int *b)
     {
       int t=*a; *a=*b; *b=t;
@@ -73,6 +73,7 @@ Quotes are from Mike Vanier's *If programming languages were cars*:
         sort(arr, r, end);
       }
     }
+```
 
 From <http://alienryderflex.com/quicksort/>, originally from Wikipedia.
 
@@ -82,7 +83,7 @@ From <http://alienryderflex.com/quicksort/>, originally from Wikipedia.
 
 > Java is a family station wagon. It's easy to drive, it's not too fast, and you can't hurt yourself.
 
-    !java
+```java
     public class Quicksort {
         static <T extends Comparable<? super T>> void quicksort(T[] array) {
             quicksort(array, 0, array.length - 1);
@@ -105,6 +106,7 @@ From <http://alienryderflex.com/quicksort/>, originally from Wikipedia.
             if (left < right0) quicksort(array, left, right0);
         }
     }
+```
 
 Adapted from <http://literateprograms.org> and licensed under MIT/X11.
 
@@ -113,7 +115,7 @@ Adapted from <http://literateprograms.org> and licensed under MIT/X11.
 
 > Python is a great beginner's car; you can drive it without a license. Unless you want to drive really fast or on really treacherous terrain, you may never need another car.
 
-    !python
+```python
     def qsort(list):
         if list == []: 
             return []
@@ -122,6 +124,7 @@ Adapted from <http://literateprograms.org> and licensed under MIT/X11.
             lesser = qsort([x for x in list[1:] if x < pivot])
             greater = qsort([x for x in list[1:] if x >= pivot])
             return lesser + [pivot] + greater
+```
 
 Adapted from <http://literateprograms.org> and licensed under MIT/X11.
 
@@ -131,7 +134,7 @@ Adapted from <http://literateprograms.org> and licensed under MIT/X11.
 
 > At first it doesn't seem to be a car at all, but now and then you spot a few people driving it around. After a point you decide to learn more about it and you realize it's actually a car that can make more cars. You tell your friends, but they all laugh and say these cars look way too weird. You still keep one in your garage, hoping one day they will take over the streets.
 
-    !scheme
+```scheme
     (defun factorial (n)
        (if (<= n 1)
            1
@@ -139,6 +142,7 @@ Adapted from <http://literateprograms.org> and licensed under MIT/X11.
 
     -- one line
     (defun factorial (n) (if (<= n 1) 1 (* n (factorial (- n 1)))))
+```
 
 From <http://en.wikipedia.org/wiki/Lisp_(programming_language)>
 
@@ -147,13 +151,14 @@ From <http://en.wikipedia.org/wiki/Lisp_(programming_language)>
 
 > Haskell is an incredibly elegantly-designed and beautiful car, which is rumored to be able to drive over extremely strange terrain. The one time you tried to drive it, it didn't actually drive along the road; instead, it made copies of itself and the road, with each successive copy of the road having the car a little further along. It's supposed to be possible to drive it in a more conventional way, but you don't know enough math to figure out how.
 
-    !haskell
+```haskell
     quicksort :: Ord a => [a] -> [a]
     quicksort []     = []
     quicksort (p:xs) = (quicksort lesser) ++ [p] ++ (quicksort greater)
         where
             lesser  = filter (< p) xs
             greater = filter (>= p) xs
+```
 
 From <http://www.haskell.org/haskellwiki/Introduction>
 
@@ -166,9 +171,10 @@ From <http://www.haskell.org/haskellwiki/Introduction>
 
 What about this?
 
-    !c
+```R
     plot(speed~dist, cars)
     abline(lm(speed~dist, cars))
+```
 
 ![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-06/img/rplot.png)
 
@@ -186,14 +192,13 @@ What about this?
 
 Math:
 
-    !sh
     0! = 1
     n! = n (n-1) (n-2) ... 2 * 1 
        = n (n-1)!
 
 Python:
 
-    !python
+```python
     def factorial(n):
         if n == 1:
             return 1
@@ -205,12 +210,14 @@ Python:
         for i in range(n):
             result = result * i
         return result
+```
 
 Haskell:
 
-    !haskell
+```haskell
     factorial 0 = 1
     factorial n = n * factorial (n - 1)
+```
 
 ----
 
@@ -233,23 +240,24 @@ Haskell:
 
 C:
 
-    !c
+```c
     c = a + b;
     if (c != 10) {
         do_something();
     }
-
+```
 
 Assembly:
 
-    !sh
+```asm
     add eax, ebx;
     sub eax, 10;
     jnz 0x42;
+```
 
 Machine code:
 
-    !sh
+
     0011 0000 0001
     0100 0000 1010
     1001 0010 1010
@@ -291,12 +299,13 @@ Machine code:
 
 # Syntax
 
-    !python
+```python
      File "/var/www/queue/views.py", line 636
 
        if method.lower() == 'GET'
                                 ^
     SyntaxError: invalid syntax
+```
 
 - Syntax is the easy part :)
 - It's *how* you say what you mean.
@@ -373,7 +382,7 @@ Context free grammars and pushdown automata are equivalent. You can construct a 
 
 # AST for a program
 
-    !c
+```c
     // Expression
     a + b
 
@@ -385,6 +394,7 @@ Context free grammars and pushdown automata are equivalent. You can construct a 
     if (c > 10) {
         c = 0;
     }
+```
 
 AST: 
 
