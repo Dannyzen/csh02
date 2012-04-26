@@ -170,7 +170,7 @@ What about this?
     plot(speed~dist, cars)
     abline(lm(speed~dist, cars))
 
-![](img/rplot.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-06/img/rplot.png)
 
 - Does power == conciseness?
 
@@ -308,7 +308,7 @@ Machine code:
 
 **Sentance:** Tom found a cat.
 
-![](img/tom-found-a-cat.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-06/img/tom-found-a-cat.png)
 
     Sentance   ::= NounPhrase Verb [NounPhrase]
     NounPhrase ::= Noun | Article Noun
@@ -323,7 +323,7 @@ This is called a *grammar* and it's in *Backus Naur Form* or BNR. It describes a
 
 Context free grammars and pushdown automata are equivalent. You can construct a pushdown automaton to recognize a language.
 
-![](img/pushdown-automaton.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-06/img/pushdown-automaton.png)
 
 ----
 
@@ -352,7 +352,7 @@ Context free grammars and pushdown automata are equivalent. You can construct a 
     Noun       ::= 'Tom' | 'cat'
     Adjective  ::= 'tabby' | 'black' | 'calico'
 
-![](img/tom-gallantly-rescued-a-tabby-cat.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-06/img/tom-gallantly-rescued-a-tabby-cat.png)
 
 ----
 
@@ -401,14 +401,17 @@ AST:
 
 # AST for a program
 
-![](img/program.png)
+![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-06/img/program.png)
 
 
 ----
 
 # What can you do with an AST?
 
-![](img/program.png)
+- Translation
+- Transformation
+- Out-of-order execution
+- Stay tuned for next week!
 
 ----
 
