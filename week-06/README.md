@@ -11,4 +11,5 @@ Location: GeneralAssemb.ly
 ## Lectures
 
 1. [Lecture 1](https://github.com/generalassembly/cs-for-hackers/blob/master/week-06/lecture1.md): Language variety and power, syntax, semantics.
+1. [Lecture 2](https://github.com/generalassembly/cs-for-hackers/blob/master/week-06/lecture2.md): Semantics, &lambda;-calculus, ideas in functional programming.
 
