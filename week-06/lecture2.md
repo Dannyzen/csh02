@@ -33,7 +33,7 @@ background-color: #F8F8F8;
 
 **Sentance:** Tom found a cat.
 
-![](https://github.com/generalassembly/cs-for-hackers/raw/master/week-06/img/tom-found-a-cat.png)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-06/img/tom-found-a-cat.png)
 
 Grammar:
 

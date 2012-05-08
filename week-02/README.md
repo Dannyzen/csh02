@@ -9,7 +9,7 @@ and how do our favoraite languges/libraries make use of them?
 
 ## Lectures
 
-1. [Lectures 1 and 2](https://github.com/generalassembly/cs-for-hackers/blob/master/week-02/lecture.md)
+1. [Lectures 1 and 2](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-02/lecture.md)
 
 ## Hacking Challenge
 
