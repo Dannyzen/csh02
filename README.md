@@ -15,14 +15,14 @@ university would approach it:
 
 ## Weeks
 
-- [Week 1 - Systems Architecture](https://github.com/generalassembly/cs-for-hackers/tree/master/week-01)
-- [Week 2 - Operating Systems](https://github.com/generalassembly/cs-for-hackers/tree/master/week-02)
-- [Weeks 3/4 - Data Structures and Algorithms](https://github.com/generalassembly/cs-for-hackers/tree/master/week-03)
-- [Week 5 - Theory of Computation](https://github.com/generalassembly/cs-for-hackers/tree/master/week-05)
-- [Week 6 - Theory of Programming Languages](https://github.com/generalassembly/cs-for-hackers/tree/master/week-06)
-- [Week 7 - Implementing Programming Languages](https://github.com/generalassembly/cs-for-hackers/tree/master/week-07)
-- [Week 8 - Concurrency and the failure of Moore's Law](https://github.com/generalassembly/cs-for-hackers/tree/master/week-08)
-- [Weeks 9/10 - Machine Learning](https://github.com/generalassembly/cs-for-hackers/tree/master/week-09)
+- [Week 1 - Systems Architecture](https://github.com/generalassembly-studio/cs-for-hackers/tree/master/week-01)
+- [Week 2 - Operating Systems](https://github.com/generalassembly-studio/cs-for-hackers/tree/master/week-02)
+- [Weeks 3/4 - Data Structures and Algorithms](https://github.com/generalassembly-studio/cs-for-hackers/tree/master/week-03)
+- [Week 5 - Theory of Computation](https://github.com/generalassembly-studio/cs-for-hackers/tree/master/week-05)
+- [Week 6 - Theory of Programming Languages](https://github.com/generalassembly-studio/cs-for-hackers/tree/master/week-06)
+- [Week 7 - Implementing Programming Languages](https://github.com/generalassembly-studio/cs-for-hackers/tree/master/week-07)
+- [Week 8 - Concurrency and the failure of Moore's Law](https://github.com/generalassembly-studio/cs-for-hackers/tree/master/week-08)
+- [Weeks 9/10 - Machine Learning](https://github.com/generalassembly-studio/cs-for-hackers/tree/master/week-09)
 
 
 ## Class Format
