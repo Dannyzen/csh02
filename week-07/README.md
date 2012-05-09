@@ -13,4 +13,6 @@ Instructor: [Heewa Barfchin](http://twitter.com/Heewa), [Chartbeat](http://chart
 
 ## Hacking Challenge
 
-...
+WORM
+
+![](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-07/worm.png)
