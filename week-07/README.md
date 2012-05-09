@@ -15,4 +15,4 @@ Instructor: [Heewa Barfchin](http://twitter.com/Heewa), [Chartbeat](http://chart
 
 WORM
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-07/worm.png)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-07/worm.png)
