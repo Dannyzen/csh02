@@ -11,17 +11,15 @@ Instructor: [Heewa Barfchin](http://twitter.com/Heewa), [Chartbeat](http://chart
 1. [Lecture 1](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-07/lecture01-compilers.markdown): Compilers 
 1. [Lecture 2](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-07/lecture02-interpreters.markdown): Interpreters
 
-## Hacking Challenge
-
-WORM
-
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-07/worm.png)
-
+## Hacking Challenge: WORM
 
 Assignment: Implement a virtual machine (like python) that can run worm bytecode. I've provided an assembler (wiggle.py) and separately a reference file (wormassembly.py) that explains the register layout and instructions you need to support. There's also a sample file (language.txt) of some assembly code (that you can convert to bytecode with wiggle.py).
 
 
-## Worm Bytecode Language Spec
+### Sample Programs
+
+The programs directory contains some worm-assembly programs I've tried out on my own Worm VM. Most of them use input, but some don't, so you can try those before implementing READ, WRITE, and the E register.
+
 
 ### Instruction Format
 
@@ -44,6 +42,8 @@ Bytecode programs (usually .wormbc) can be either encoded in straight binary, or
 ### Registers
 
 This virtual machine has 4 scratch registers (0-3, identified in assembly as A-D), one magic EOF register (4, identified in assembly as E), and one stack register (5, identified in assembly as S). The stack register isn't special, it can be used however you like, it's just that way for convention.
+
+**IMPORTANT**: The E register needs to contain a 1 when there are definitely no more numbers to read from stdin, and 0 otherwise. However, you don't strictly *have* to keep it up to date at all times, it only needs to be correct when the program tries to use that register, like a MOVE or STORE instruction that refers to it.
 
 
 ### Instructions
@@ -183,4 +183,7 @@ This virtual machine has 4 scratch registers (0-3, identified in assembly as A-D
 * Ex: JMP\_LT $1  ==>  0xF0000001. If register A contains a -1 or greater,
   then the next instruction to execute shall be the 2nd instruction of the
   program, otherwise the instruction following this one should be executed next.
+
+
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-07/worm.png)
 
