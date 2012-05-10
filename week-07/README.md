@@ -16,3 +16,7 @@ Instructor: [Heewa Barfchin](http://twitter.com/Heewa), [Chartbeat](http://chart
 WORM
 
 ![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-07/worm.png)
+
+
+Assignment: Implement a virtual machine (like python) that can run worm bytecode. I've provided an assembler (wiggle.py) and separately a reference file (wormassembly.py) that explains the register layout and instructions you need to support. There's also a sample file (language.txt) of some assembly code (that you can convert to bytecode with wiggle.py).
+
