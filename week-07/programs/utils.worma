@@ -32,12 +32,14 @@
   # Call each subroutine
     JMP    L200
   L2:
+    JMP    L400
+  L4:
+    WRITE
+    JMP    L400
+  L3:
     JMP    L100
   L1:
     WRITE
-    JMP    L300
-  L3:
-    NOOP
 
     JMP    L9999
 
@@ -51,11 +53,10 @@
   L100:
     SUB    %A, %B
     JMP_GT L100
-  L101:
     SUB    %A, %B
-  L102:
+  L101:
     ADD    %A, %B
-    JMP_LT L102
+    JMP_LT L101
 
     JMP    L1  # WARNING! Obviously you'll want to replace this with yours
 
@@ -105,7 +106,44 @@
 
   #
   # Function: A = randint(0, 268435456)
+  #     side effects: uses registers B & C
   #
+  L400:
+    # A *= 69069
+    SET    %B, $69069
+    MUL    %A, %B
+
+    # A %= 2^32
+    SET    %C, $16777215
+    SET    %B, $256
+    MUL    %B, %C
+  L401:
+    SUB    %A, %B
+    JMP_GT L401
+    SUB    %A, %B
+  L402:
+    ADD    %A, %B
+    JMP_LT L402
+    ADD    %A, %B
+
+    # A += 69069
+    SET    %B, $69069
+    ADD    %A, %B
+
+    # A %= 2^32
+    SET    %C, $16777215
+    SET    %B, $256
+    MUL    %B, %C
+  L403:
+    SUB    %A, %B
+    JMP_GT L403
+    SUB    %A, %B
+  L404:
+    ADD    %A, %B
+    JMP_LT L404
+    ADD    %A, %B
+
+    JMP    L4  # WARNING! Obviously you'll want to replace this with yours
 
 
   #

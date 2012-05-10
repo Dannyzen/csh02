@@ -21,6 +21,16 @@ Assignment: Implement a virtual machine (like python) that can run worm bytecode
 The programs directory contains some worm-assembly programs I've tried out on my own Worm VM. Most of them use input, but some don't, so you can try those before implementing READ, WRITE, and the E register.
 
 
+### Assembly into Bytecode
+
+Given some assembly program in a file (maybe with the extention .worma), you can use the wiggle.py program to assemble it into bytecode, in either hex ascii or binary. Run wiggle with --help to see how.
+
+* binary (default): the file contains only instructions, no extra bytes.
+* hex: the file contains one instruction in hex per line (so, 1 newline per instruction)
+
+If you choose to implement the Worm VM in a low level language, like C/C++/Obj-C/Lisp/etc, then it'll probably be easier to use the binary format. If you use a pleasant dynamic language with tons of string manipulation support, like Python/Ruby/etc, then probably the hex format will be easier to deal with.
+
+
 ### Instruction Format
 
 Each instruction is 4 bytes long. The makeup of those bytes is dependent on the instruction. However, the highest 4 bits are always the instruction code. The rest depends on how many arguments, and what kind of argument the instruction takes.
@@ -29,14 +39,6 @@ Each instruction is 4 bytes long. The makeup of those bytes is dependent on the 
 * **two register arguments**: the next 4 bits are a register identifier (encoded as a binary positive integer), and the following 4 bits are the other register identifier. For ex, MOVE (code 0x2) takes a dest register and a src register, so MOVE %B, %C (B is register 1, and C is register 2) would look like 0x21200000.
 * **one long value argument**: the rest of the instruction is 1 binary encoded positive integer. For ex, JMP takes 1 argument (the instruction # to jump to), and its code is 0xB, so an instruction to jump to instruction #16 would look like: 0xB0000010.
 * **one register argument & one short value**: the next 4 bits are a register identifier (encoded as a binary positive integer), and the following bits are the value. For ex, SET (code 0x1) takes a dest register and a value to set it to, so SET %S, $18 (S is register 5) would look like 0x15000012.
-
-
-### Encoding
-
-Bytecode programs (usually .wormbc) can be either encoded in straight binary, or in hex.
-
-* binary: the file contains only instructions, no extra bytes.
-* hex: the file contains one instruction in hex per line (so, 1 newline per instruction)
 
 
 ### Registers
