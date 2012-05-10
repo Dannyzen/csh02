@@ -180,7 +180,7 @@ This virtual machine has 4 scratch registers (0-3, identified in assembly as A-D
 * effect: if register A contains a number smaller than 0, the next instruction
   to execute shall be value'th instruction in the program, otherwise nothing
   shall happen
-* Ex: JMP\_LT $1  ==>  0xE0000001. If register A contains a -1 or greater,
+* Ex: JMP\_LT $1  ==>  0xF0000001. If register A contains a -1 or greater,
   then the next instruction to execute shall be the 2nd instruction of the
   program, otherwise the instruction following this one should be executed next.
 
