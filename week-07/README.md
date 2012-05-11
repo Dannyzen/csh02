@@ -189,3 +189,39 @@ This virtual machine has 4 scratch registers (0-3, identified in assembly as A-D
 
 ![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-07/worm.png)
 
+
+# SPOILER WARNING!!!
+
+
+### General Tips
+
+* Have a "verbose" mode, where you print the state of registers and ram after every instruction executes.
+* Have a "debug" mode where the VM pauses after every instruction waiting for you to press a key to continue.
+* It's perfectly ok to fake things to put them off for later. Like input - you can start by "read"ing a random number, and putting a random 0 or 1 into the E register at every cycle.
+
+
+### Process
+
+1. read bytecode file - turn into a list of instructions, print how many
+1. start decoding instructions - print the name of each instruction
+1. decode rest of instructions - print arguments
+1. implement one easy instruction - set, for example; then "run" the program
+   by ignoring any instructions you haven't yet implemented
+1. keep implementing the next easiest instruction untill you're done
+* Ease of implementation for instructions:
+    1. register based ones: set, move, math
+    1. output: write
+    1. fake input (not really from stdin, make up numbers): read
+    1. ram: load, store
+    1. jumps
+    1. real input
+
+
+### SUPER SPOILERS!!! OUTRIGHT INSTRUCTIONS!!!
+
+* [How to read instructions](SPOILER_reading.md)
+* [How to deal with instructions](SPOILER_instructions.md)
+* [How to implement registers](SPOILER_registers.md)
+* [How to implement ram](SPOILER_ram.md)
+* [How to implement_jumps](SPOILER_jumps.md)
+* [How_to_implement_input](SPOILER_input.md)
