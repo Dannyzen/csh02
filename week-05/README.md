@@ -12,8 +12,3 @@ classes, and reductions to known problems.
 ## Lectures
 
 1. [Models of Computation](https://docs.google.com/presentation/d/1VJqNvLrXaQDd7W3OE3XPkYkdibujZbfIndt37y_gVik/edit)
-2. 
-
-## Hacking Challenge
-
-...
