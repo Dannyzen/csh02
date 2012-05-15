@@ -1,4 +1,4 @@
-### Week 8 - Concurrency and the failure of Moore's Law
+### Week 8/9 - Concurrency and the failure of Moore's Law
 
 What happened to Moore's Law? How do we keep making performance progress in the
 face of core limits? Topics: shared memory models, threads, locking, actor
@@ -12,6 +12,8 @@ Location: GeneralAssemb.ly
 ## Lectures
 
 1. [Lecture 1](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-08/lecture1.md): 
+<!--
 1. ~~~[Lecture 2](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-08/lecture2.md):~~~
-
+1. ~~~[Lecture 3](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-08/lecture3.md):~~~
+-->
 

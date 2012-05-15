@@ -21,7 +21,7 @@ Photo: [Travis Goodspeed](http://www.flickr.com/photos/travisgoodspeed/559296114
 
 # How chips are made: Lithography
 
-![](img/lithography.png)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/lithography.png)
 
 ## Presenter notes
 
@@ -60,7 +60,7 @@ From [The Free Lunch Is Over](http://www.gotw.ca/publications/concurrency-ddj.ht
 Physics:
 
 - Quantum current leakage (power problem)
-- Transistor performance (gate 
+- Transistor performance (gate width can't get any smaller)
 - Bus speeds and memory technology
 
 Moore's 2nd Law (Moore didn't actually say this, but everybody observses):
@@ -83,7 +83,7 @@ Moore's 2nd Law (Moore didn't actually say this, but everybody observses):
 
 We talked a bit about this in Week 2:
 
-![](img/shedule.png)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/shedule.png)
 
 - What happens when Task 1 switches to Task 2?
 - What happens when Task 2 switches cores?
@@ -103,7 +103,7 @@ We talked a bit about this in Week 2:
 
 Some processors include instructions to do this, but mostly now done in software:
 
-![](img/str.png)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/str.png)
 
 ----
 
@@ -121,15 +121,15 @@ Some processors include instructions to do this, but mostly now done in software
 
 # Dining Philosophers
 
-![](img/table.png)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/table.png)
 
 ----
 
 # Try this algorithm:
 
-![](img/states.png)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/states.png)
 
-    !c
+```!c
     thinking:
         think()
         wait_for_left_chopstick()
@@ -141,6 +141,7 @@ Some processors include instructions to do this, but mostly now done in software
         put_down_left_chopstick()
         put_down_right_chopstick()
         goto thinking
+```
 
 Is this algorithm correct?
 
@@ -169,13 +170,13 @@ Is this algorithm correct?
 - Waiter tells you when both chopsticks are available (same as taking a lock on the chopstick pair)
 - There are several solutions involving waiters
 
-![](img/waiter.png)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/waiter.png)
 
 ----
 
 # Problem: Livelock (Starvation)
 
-![](img/colors.png)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/colors.png)
 
 - Using above algorithm
 - Whenever Blue is about to finish thinking, Red or Green aquire the chopstick they share with Blue
@@ -185,7 +186,7 @@ Is this algorithm correct?
 
 # Stopsigns
 
-![](img/stopsign.png)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/stopsign.png)
 
 - What does the law say to do in this situation?
 - What would you do?
@@ -199,11 +200,11 @@ Is this algorithm correct?
 
 # Those clever philosophers...
 
-![](img/ordered.png)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/ordered.png)
 
 They decided to number their chopsticks!
 
-    !c
+```!c
     thinking:
         think()
         wait_for_low_chopstick()
@@ -215,6 +216,7 @@ They decided to number their chopsticks!
         put_down_high_chopstick()
         put_down_low_chopstick()
         goto thinking
+```
 
 
 ## Presenter Notes
@@ -246,7 +248,7 @@ C provides `fork()`:
 
 Consider this program:
 
-    !c
+```!c
     int i = 0;
     pid = fork();
     if (pid == 0) {        // this is the child process
@@ -258,6 +260,7 @@ Consider this program:
            i = i + 1;
         }
     }
+```
 
 - At what lines could this program be interrupted? Why?
 - What could go wrong here? How would you fix it?
@@ -266,7 +269,7 @@ Consider this program:
 
 # Solution: use a waiter
 
-    !c
+```!c
     int i = 0;
     pthread_mutex_t mutex;
     pthread_mutex_init(&mutex, NULL);
@@ -281,6 +284,7 @@ Consider this program:
     }
 
     pthread_mutex_destroy(&mutex);
+```
 
 - The section between the lock and unlock is called a 'critical section'
 - While the lock is held (lines 8-11), the other process will wait for unlock before entering critical section
@@ -295,7 +299,7 @@ Consider this program:
 
 How do you ensure that something like `pthread_mutex_lock(&mutex);` works correctly if it is made out of lines of code?
 
-![](img/xchg.png)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/xchg.png)
 
 ----
 
