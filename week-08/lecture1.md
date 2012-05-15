@@ -129,7 +129,7 @@ Some processors include instructions to do this, but mostly now done in software
 
 ![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/states.png)
 
-```!c
+```c
     thinking:
         think()
         wait_for_left_chopstick()
@@ -204,7 +204,7 @@ Is this algorithm correct?
 
 They decided to number their chopsticks!
 
-```!c
+```c
     thinking:
         think()
         wait_for_low_chopstick()
@@ -248,7 +248,7 @@ C provides `fork()`:
 
 Consider this program:
 
-```!c
+```c
     int i = 0;
     pid = fork();
     if (pid == 0) {        // this is the child process
@@ -269,7 +269,7 @@ Consider this program:
 
 # Solution: use a waiter
 
-```!c
+```c
     int i = 0;
     pthread_mutex_t mutex;
     pthread_mutex_init(&mutex, NULL);
