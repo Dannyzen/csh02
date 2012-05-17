@@ -305,7 +305,7 @@ How do you ensure that something like `pthread_mutex_lock(&mutex);` works correc
 
 # Next time
 
-- Producers consumer
+- Producer consumer
 - The C10k problem
 - Thread based webservers
 - Event loop based webservers
