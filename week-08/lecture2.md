@@ -287,7 +287,7 @@ We'll look at example programs in c (higher level languages boil down to these c
 - epoll() (linux) and kqueue() (freebsd) do just that!
 - nginx, lighty, ATS, node, twisted, tornado, eventmachine, use this approach.
 
-![](img/libevent-benchmark2.jpg)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/libevent-benchmark2.jpg)
 
 ----
 
