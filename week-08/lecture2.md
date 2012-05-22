@@ -15,7 +15,7 @@ When we're done, you should understand:
 
 So, I lied a little on Monday. The truth looks something like this:
 
-    !c
+```c
     #include <stdio.h>
     #include <stdlib.h>
     #include <pthread.h>
@@ -34,6 +34,7 @@ So, I lied a little on Monday. The truth looks something like this:
         pthread_join(t2, NULL); pthread_join(t2, NULL);
         pthread_mutex_destroy(&mutex);
     }
+```
 
 - How many *processes* do we have here?
 - Is this program correct? (Does it do anything unexpected?) - Is it useful?
@@ -42,7 +43,7 @@ So, I lied a little on Monday. The truth looks something like this:
 
 # A more useful program
 
-    !c
+```c
     int i = 0;
     ...
 
@@ -57,6 +58,7 @@ So, I lied a little on Monday. The truth looks something like this:
            do_lots_of_work(j);
         }
     }
+```
 
 - We're doing work for each index, so we spend less time waiting for the lock
 
@@ -72,7 +74,7 @@ So, I lied a little on Monday. The truth looks something like this:
 
 # Producers and consumers
 
-![](producer-consumer.png)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/producer-consumer.png)
 
 - Also called the bounded buffer problem.
 - This can be used to implement message passing.
@@ -113,7 +115,7 @@ So why could you only handle a hundered or so?
 
 Keep this in your head as we go forward.
 
-![](img/shedule.png)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/shedule.png)
 
 
 ----
@@ -122,7 +124,7 @@ Keep this in your head as we go forward.
 
 We'll look at example programs in c (higher level languages boil down to these calls anyway):
 
-    !c
+```c
     int backlog = 10;
     int server_socket = socket(...);
 
@@ -136,6 +138,7 @@ We'll look at example programs in c (higher level languages boil down to these c
         send(client_socket, response, ...);             // block until sent
         close(client_socket);
     }
+```
 
 - What's wrong with this approach?
 
@@ -148,7 +151,7 @@ We'll look at example programs in c (higher level languages boil down to these c
 
 # This server is totally forked
 
-    !c
+```c
     int backlog = 10;
     int server_socket = socket(...);
 
@@ -165,6 +168,7 @@ We'll look at example programs in c (higher level languages boil down to these c
             exit(0);
         }
     }
+```
 
 - What's better about this server?
 - What's still expensive?
@@ -178,7 +182,7 @@ We'll look at example programs in c (higher level languages boil down to these c
 
 # Pre-forking
 
-    !c
+```c
     int backlog = 100;
     int server_socket = socket(...);
 
@@ -195,6 +199,7 @@ We'll look at example programs in c (higher level languages boil down to these c
         send(client_socket, response, ...);             // block until sent
         close(client_socket);
     }
+```
 
 - What's better about this?
 - Are there any negatives?
@@ -212,7 +217,7 @@ We'll look at example programs in c (higher level languages boil down to these c
 
 # Apache config example
 
-    !c
+```c
     # prefork MPM
     # StartServers: number of server processes to start
     # MinSpareServers: minimum number of server processes which are kept spare
@@ -238,13 +243,13 @@ We'll look at example programs in c (higher level languages boil down to these c
         MaxClients          150
         MaxRequestsPerChild   0
     </IfModule>
-
+```
 
 ----
 
 # `select()` to the rescue!
 
-    !c
+```c
     int backlog = 100;
     int num_sockets = 1;
     fd_set sockets; // keep track of sockets
@@ -271,6 +276,7 @@ We'll look at example programs in c (higher level languages boil down to these c
             close(client_socket);
         }
     }
+```
 
 ----
 
@@ -281,7 +287,7 @@ We'll look at example programs in c (higher level languages boil down to these c
 - epoll() (linux) and kqueue() (freebsd) do just that!
 - nginx, lighty, ATS, node, twisted, tornado, eventmachine, use this approach.
 
-![](img/libevent-benchmark2.jpg)
+![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/libevent-benchmark2.jpg)
 
 ----
 
