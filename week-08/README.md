@@ -13,10 +13,11 @@ Location: GeneralAssemb.ly
 
 1. [Lecture 1](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-08/lecture1.md): 
 1. [Lecture 2](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-08/lecture2.md):
+1. [Lecture 2](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-08/lecture3.md):
 
 ## Hacking challenge
 
-Summary: Setup a simple, "hello world" page using a threaded webserver (examples could include apache, web.py, rails, django, or some java framework). Also setup a select() style server that uses a single thread (you could use lighttpd, nginx, nodejs, ATS, etc.). What is the best performance you can get out of each? 
+Summary: Setup a simple, "hello world" page using a threaded webserver (apache using MPM prefork is a great choice). Also setup a select() style server that uses a single thread (lighttpd or nginx are great for this). What is the best performance you can get out of each? 
 
 Measure performance in terms of number of clients that can connect at once, and total number of requests that can be served in a second. You can use the program "ab" (apachebench) to do the testing.
 
@@ -29,5 +30,5 @@ Try to get the above done in less than 4 focused hours.
 
 **Bonus question:**
 
-Write threaded and select() based webservers that return natural numbers, 1, 2, 3, 4, etc., adding 1 for each request. Which version is faster? Which one was easier to implement? What would you do to increase your performance by 10x?
+Write threaded (web.py, rails, django, etc.) and select() based webservers (node.js, twisted, event machine, etc.) that return natural numbers, 1, 2, 3, 4, etc., adding 1 for each request. Which version is faster? Which one was easier to implement? What would you do to increase your performance by 10x?
 
