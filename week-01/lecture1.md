@@ -421,6 +421,7 @@ style="max-height: 90%; max-width: 80%;">
         instruction = memory[program_counter]
         data = memory[get_data_address(instruction)]
         execute(instruction, data)
+        program_counter += 1
 ```
         
 
