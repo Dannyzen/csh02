@@ -118,7 +118,7 @@ the tree has at each node. This is not magical or surprising, because
 `log_b(n)` is simply the height of a tree with `n` total nodes and `b` branches
 allowed at each node.
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-03/binary_tree.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-03/binary_tree.png)
 
 Notice if you flatten this tree, it becomes a sorted list. :)
 

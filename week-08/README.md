@@ -11,9 +11,9 @@ Location: GeneralAssemb.ly
 
 ## Lectures
 
-1. [Lecture 1](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-08/lecture1.md): 
-1. [Lecture 2](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-08/lecture2.md):
-1. [Lecture 2](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-08/lecture3.md):
+1. [Lecture 1](https://github.com/ryanwitt/csh/blob/master/week-08/lecture1.md): 
+1. [Lecture 2](https://github.com/ryanwitt/csh/blob/master/week-08/lecture2.md):
+1. [Lecture 2](https://github.com/ryanwitt/csh/blob/master/week-08/lecture3.md):
 
 ## Hacking challenge
 

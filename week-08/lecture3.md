@@ -77,7 +77,7 @@ DHTs you may have heard of:
 
 # Chord: simple and elegant DHT
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/chord-abstract.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/chord-abstract.png)
 
 <http://pdos.csail.mit.edu/chord/>
 
@@ -97,7 +97,7 @@ DHTs you may have heard of:
 - This is called **consistent hashing**
 - Each machine is responsible for keys it is the **successor** node
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/successor.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/successor.png)
 
 ----
 
@@ -141,7 +141,7 @@ To find the node where `key` resides:
             return self.successor.find_successor(key)
 ```
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/simple-successor.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/simple-successor.png)
 
 - How fast is this? Can we find it faster?
 
@@ -152,7 +152,7 @@ To find the node where `key` resides:
 - The exponential finger table
 - Store the key for nodes exponentially further away from you
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/finger-map.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/finger-map.png)
 
 - How much storage space will the finger table take?
 - What does the finger table remind you of?
@@ -176,7 +176,7 @@ To find the node where `key` resides:
         return self
 ```
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/finger-lookup.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/finger-lookup.png)
 
 ----
 

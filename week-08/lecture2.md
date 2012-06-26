@@ -74,7 +74,7 @@ So, I lied a little on Monday. The truth looks something like this:
 
 # Producers and consumers
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/producer-consumer.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/producer-consumer.png)
 
 - Also called the bounded buffer problem.
 - This can be used to implement message passing.
@@ -115,7 +115,7 @@ So why could you only handle a hundered or so?
 
 Keep this in your head as we go forward.
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/shedule.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/shedule.png)
 
 
 ----
@@ -287,7 +287,7 @@ We'll look at example programs in c (higher level languages boil down to these c
 - epoll() (linux) and kqueue() (freebsd) do just that!
 - nginx, lighty, ATS, node, twisted, tornado, eventmachine, use this approach.
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/libevent-benchmark2.jpg)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/libevent-benchmark2.jpg)
 
 ----
 

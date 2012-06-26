@@ -176,7 +176,7 @@ What about this?
     abline(lm(speed~dist, cars))
 ```
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-06/img/rplot.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-06/img/rplot.png)
 
 - Does power == conciseness?
 
@@ -317,7 +317,7 @@ Machine code:
 
 **Sentance:** Tom found a cat.
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-06/img/tom-found-a-cat.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-06/img/tom-found-a-cat.png)
 
     Sentance   ::= NounPhrase Verb [NounPhrase]
     NounPhrase ::= Noun | Article Noun
@@ -332,7 +332,7 @@ This is called a *grammar* and it's in *Backus Naur Form* or BNR. It describes a
 
 Context free grammars and pushdown automata are equivalent. You can construct a pushdown automaton to recognize a language.
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-06/img/pushdown-automaton.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-06/img/pushdown-automaton.png)
 
 ----
 
@@ -361,7 +361,7 @@ Context free grammars and pushdown automata are equivalent. You can construct a 
     Noun       ::= 'Tom' | 'cat'
     Adjective  ::= 'tabby' | 'black' | 'calico'
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-06/img/tom-gallantly-rescued-a-tabby-cat.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-06/img/tom-gallantly-rescued-a-tabby-cat.png)
 
 ----
 
@@ -411,7 +411,7 @@ AST:
 
 # AST for a program
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-06/img/program.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-06/img/program.png)
 
 
 ----

@@ -13,7 +13,7 @@ Remember this?
 
 ## Second Chance Machine
 
-<img src="https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/state-machine.png"
+<img src="https://github.com/ryanwitt/csh/raw/master/week-01/img/state-machine.png"
 style="max-height: 90%; max-width: 80%;">
 
 - This is called a state machine.
@@ -46,7 +46,7 @@ We can call `DONE` an *accepting state*.
 
 # Even number of 1s machine
 
-<img src="https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-03/even-1-acceptor.png"
+<img src="https://github.com/ryanwitt/csh/raw/master/week-03/even-1-acceptor.png"
 style="max-height: 90%; max-width: 80%;">
 
 How would you implement this?
@@ -79,7 +79,7 @@ How would you implement this?
 # Tom finder
 
 
-<img src="https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-03/tom-acceptor.png"
+<img src="https://github.com/ryanwitt/csh/raw/master/week-03/tom-acceptor.png"
 style="max-height: 90%; max-width: 80%;">
 
 How would you implement this?

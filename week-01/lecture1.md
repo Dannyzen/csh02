@@ -54,7 +54,7 @@ style="max-height: 80%; max-width: 80%;"
 
 # Another computer
 
-<img src="https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/binary-adder.jpg"
+<img src="https://github.com/ryanwitt/csh/raw/master/week-01/img/binary-adder.jpg"
 style="max-height: 80%; max-width: 80%;">
 
 <http://onecreativeblog.com/post/8785145888/>
@@ -172,7 +172,7 @@ Some traditional names:
 
 # Circuits and Truth tables
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/components.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-01/img/components.png)
 
 
 ----
@@ -193,8 +193,8 @@ Some traditional names:
 <tr><td>1</td><td>1</td><td>1</td></tr>
 </table>
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/and.png)
-[download circuit](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/circuits/and.cir)
+![](https://github.com/ryanwitt/csh/raw/master/week-01/img/and.png)
+[download circuit](https://github.com/ryanwitt/csh/raw/master/week-01/circuits/and.cir)
 
 
 Quick Quiz: What is 1010 & 1100?
@@ -217,8 +217,8 @@ Quick Quiz: What is 1010 & 1100?
 <tr><td>1</td><td>1</td><td>1</td></tr>
 </table>
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/or.png)
-[download circuit](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/circuits/or.cir)
+![](https://github.com/ryanwitt/csh/raw/master/week-01/img/or.png)
+[download circuit](https://github.com/ryanwitt/csh/raw/master/week-01/circuits/or.cir)
 
 ----
 
@@ -238,8 +238,8 @@ Quick Quiz: What is 1010 & 1100?
 <tr><td>1</td><td>1</td><td>0</td></tr>
 </table>
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/xor.png)
-[download circuit](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/circuits/xor.cir)
+![](https://github.com/ryanwitt/csh/raw/master/week-01/img/xor.png)
+[download circuit](https://github.com/ryanwitt/csh/raw/master/week-01/circuits/xor.cir)
 
 ----
 
@@ -261,8 +261,8 @@ Quick Quiz: What is 1010 & 1100?
 <tr><td>1</td><td>1</td><td>0</td><td>1</td></tr>
 </table>
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/half-adder.png)
-[download circuit](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/circuits/half-adder.cir)
+![](https://github.com/ryanwitt/csh/raw/master/week-01/img/half-adder.png)
+[download circuit](https://github.com/ryanwitt/csh/raw/master/week-01/circuits/half-adder.cir)
 
 - Does the C column look familiar?
 - Does the carry column look familiar?
@@ -283,7 +283,7 @@ Quick Quiz: What is 1010 & 1100?
 <tr><td>1</td><td>1</td><td>1</td><td>?</td><td>?</td></tr>
 </table>
 
-<img src="https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/full-adder.png"
+<img src="https://github.com/ryanwitt/csh/raw/master/week-01/img/full-adder.png"
 style="max-height: 60%; max-width: 80%;">
 
 ----
@@ -304,16 +304,16 @@ style="max-height: 60%; max-width: 80%;">
 <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
 </table>
 
-<img src="https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/full-adder.png"
+<img src="https://github.com/ryanwitt/csh/raw/master/week-01/img/full-adder.png"
 style="max-height: 60%; max-width: 80%;">
-[download circuit](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/circuits/full-adder.cir)
+[download circuit](https://github.com/ryanwitt/csh/raw/master/week-01/circuits/full-adder.cir)
 
 ----
 # Chained Full Adder
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/adder-chain.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-01/img/adder-chain.png)
 
-<img src="https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/binary-adder.jpg"
+<img src="https://github.com/ryanwitt/csh/raw/master/week-01/img/binary-adder.jpg"
 style="max-height: 40%; max-width: 80%;">
 
 
@@ -323,10 +323,10 @@ style="max-height: 40%; max-width: 80%;">
 
 Selects between multiple inputs.
 
-<img src="https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/multiplexer.png"
+<img src="https://github.com/ryanwitt/csh/raw/master/week-01/img/multiplexer.png"
 style="max-height: 80%; max-width: 80%;">
 
-[download circuit](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/circuits/multiplexer.cir)
+[download circuit](https://github.com/ryanwitt/csh/raw/master/week-01/circuits/multiplexer.cir)
 
 
 ----
@@ -335,19 +335,19 @@ style="max-height: 80%; max-width: 80%;">
 
 Selects between multiple outputs for a given input.
 
-<img src="https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/demux.png"
+<img src="https://github.com/ryanwitt/csh/raw/master/week-01/img/demux.png"
 style="max-height: 80%; max-width: 80%;">
 
-[download circuit](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/circuits/demux.cir)
+[download circuit](https://github.com/ryanwitt/csh/raw/master/week-01/circuits/demux.cir)
 
 ----
 
 # Basic memory (Latch)
 
-<img src="https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/d-latch.png"
+<img src="https://github.com/ryanwitt/csh/raw/master/week-01/img/d-latch.png"
 style="max-height: 80%; max-width: 80%;">
 
-[download circuit](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/circuits/d-latch.cir)
+[download circuit](https://github.com/ryanwitt/csh/raw/master/week-01/circuits/d-latch.cir)
 
 - Fast
 - Used for registers, cache 
@@ -357,10 +357,10 @@ style="max-height: 80%; max-width: 80%;">
 
 # Not-so basic memory
 
-<img src="https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/dram.png"
+<img src="https://github.com/ryanwitt/csh/raw/master/week-01/img/dram.png"
 style="max-height: 80%; max-width: 80%;">
 
-[download circuit](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/circuits/dram.cir)
+[download circuit](https://github.com/ryanwitt/csh/raw/master/week-01/circuits/dram.cir)
 
 - Dense
 - Slow
@@ -381,23 +381,23 @@ style="max-height: 80%; max-width: 80%;">
 
 # The ALU (Arithmetic logic unit)
 
-<img src="https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/alu.png"
+<img src="https://github.com/ryanwitt/csh/raw/master/week-01/img/alu.png"
 style="max-height: 90%; max-width: 80%;">
 
 ----
 
 # A "Real" ALU
 
-<img src="https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/1-bit-alu.png"
+<img src="https://github.com/ryanwitt/csh/raw/master/week-01/img/1-bit-alu.png"
 style="max-height: 80%; max-width: 80%;">
 
-[download circuit](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/circuits/1-bit-alu.cir)
+[download circuit](https://github.com/ryanwitt/csh/raw/master/week-01/circuits/1-bit-alu.cir)
 
 ----
 
 # The Von Neumann Machine
 
-<img src="https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-01/img/von-neumann.png"
+<img src="https://github.com/ryanwitt/csh/raw/master/week-01/img/von-neumann.png"
 style="max-height: 90%; max-width: 80%;">
 
 ----

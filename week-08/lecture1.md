@@ -21,7 +21,7 @@ Photo: [Travis Goodspeed](http://www.flickr.com/photos/travisgoodspeed/559296114
 
 # How chips are made: Lithography
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/lithography.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/lithography.png)
 
 ## Presenter notes
 
@@ -83,7 +83,7 @@ Moore's 2nd Law (Moore didn't actually say this, but everybody observses):
 
 We talked a bit about this in Week 2:
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/shedule.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/shedule.png)
 
 - What happens when Task 1 switches to Task 2?
 - What happens when Task 2 switches cores?
@@ -103,7 +103,7 @@ We talked a bit about this in Week 2:
 
 Some processors include instructions to do this, but mostly now done in software:
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/str.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/str.png)
 
 ----
 
@@ -121,13 +121,13 @@ Some processors include instructions to do this, but mostly now done in software
 
 # Dining Philosophers
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/table.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/table.png)
 
 ----
 
 # Try this algorithm:
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/states.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/states.png)
 
 ```c
     thinking:
@@ -170,13 +170,13 @@ Is this algorithm correct?
 - Waiter tells you when both chopsticks are available (same as taking a lock on the chopstick pair)
 - There are several solutions involving waiters
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/waiter.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/waiter.png)
 
 ----
 
 # Problem: Livelock (Starvation)
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/colors.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/colors.png)
 
 - Using above algorithm
 - Whenever Blue is about to finish thinking, Red or Green aquire the chopstick they share with Blue
@@ -186,7 +186,7 @@ Is this algorithm correct?
 
 # Stopsigns
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/stopsign.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/stopsign.png)
 
 - What does the law say to do in this situation?
 - What would you do?
@@ -200,7 +200,7 @@ Is this algorithm correct?
 
 # Those clever philosophers...
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/ordered.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/ordered.png)
 
 They decided to number their chopsticks!
 
@@ -299,7 +299,7 @@ Consider this program:
 
 How do you ensure that something like `pthread_mutex_lock(&mutex);` works correctly if it is made out of lines of code?
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-08/img/xchg.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-08/img/xchg.png)
 
 ----
 

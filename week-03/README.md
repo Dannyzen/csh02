@@ -9,13 +9,13 @@ done? This is the collected wisdom of systems builders over the years.
 
 ## Lectures
 
-1. [Lecture Slides](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-03/lecture.pdf)
+1. [Lecture Slides](https://github.com/ryanwitt/csh/raw/master/week-03/lecture.pdf)
 
 ## Hacking Challenge
 
-1. [Hacking Challenge](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-03/hacking-challenge.pdf)
+1. [Hacking Challenge](https://github.com/ryanwitt/csh/raw/master/week-03/hacking-challenge.pdf)
 
 ## Extra Reading
 
-1. [Big-O Examples](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-03/big-o-examples.md)
-2. [State Machines](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-03/state-machines.md)
+1. [Big-O Examples](https://github.com/ryanwitt/csh/blob/master/week-03/big-o-examples.md)
+2. [State Machines](https://github.com/ryanwitt/csh/blob/master/week-03/state-machines.md)

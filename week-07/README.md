@@ -8,8 +8,8 @@ Instructor: [Heewa Barfchin](http://twitter.com/Heewa), [Chartbeat](http://chart
 
 ## Lectures
 
-1. [Lecture 1](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-07/lecture01-compilers.markdown): Compilers 
-1. [Lecture 2](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-07/lecture02-interpreters.markdown): Interpreters
+1. [Lecture 1](https://github.com/ryanwitt/csh/blob/master/week-07/lecture01-compilers.markdown): Compilers 
+1. [Lecture 2](https://github.com/ryanwitt/csh/blob/master/week-07/lecture02-interpreters.markdown): Interpreters
 
 ## Hacking Challenge: WORM
 
@@ -187,7 +187,7 @@ This virtual machine has 4 scratch registers (0-3, identified in assembly as A-D
   program, otherwise the instruction following this one should be executed next.
 
 
-![](https://github.com/generalassembly-studio/cs-for-hackers/raw/master/week-07/worm.png)
+![](https://github.com/ryanwitt/csh/raw/master/week-07/worm.png)
 
 
 # SPOILER WARNING!!!
