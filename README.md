@@ -15,7 +15,7 @@ university would approach it:
 
 ## Weeks
 
-- [Week 1 - Systems Architecture](https://github.com/ryanwitt/csh/tree/master/week-01)
+- [Week 1 - Systems Architecture](https://github.com/ryanwitt/csh02/tree/master/week-01)
 - Week 2 - Operating Systems
 - Weeks 3/4 - Data Structures and Algorithms
 - Weeks 5 - Important Algorithms
