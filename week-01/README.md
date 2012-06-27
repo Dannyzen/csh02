@@ -13,7 +13,7 @@ cache locality.
 
 ## Lectures
 
-1. [Lecture 1](https://github.com/generalassembly-studio/cs-for-hackers/blob/master/week-01/lecture1.md): What is a computer? From digital logic to the ALU.
+1. [Lecture 1](https://github.com/ryanwitt/csh02/blob/master/week-01/lecture1.md): What is a computer? From digital logic to the ALU.
 2. Lecture 2: System dynamics, cache locality and branch prediciton.
 
 ## Hacking Challenge

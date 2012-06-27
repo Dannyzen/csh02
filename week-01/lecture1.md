@@ -403,7 +403,7 @@ style="max-height: 90%; max-width: 80%;">
 # Execution cycle
 
 
-    !python
+```python
     #!/usr/bin/env python
 
     program_counter = 0
@@ -419,6 +419,7 @@ style="max-height: 90%; max-width: 80%;">
         instruction = memory[program_counter]
         data = memory[get_data_address(instruction)]
         execute(instruction, data)
+```
         
 
 ----
@@ -426,18 +427,22 @@ style="max-height: 90%; max-width: 80%;">
 # How instructions look
 
 
-    !c
+```c
     // c
     c = a + b;
     if (c != 10) {
         do_something();
     }
+```
 
+```assembly
     // assembly
     add eax, ebx;
     sub eax, 10;
     jnz 0x42;
+```
 
+```c
     // machine code
     0011 0000 0001
     0100 0000 1010
@@ -445,6 +450,7 @@ style="max-height: 90%; max-width: 80%;">
      ^     |   | 
     opcode |   ^ operand
            ^ operand
+```
 
 - Wire up the opcode to the ALU selector
 - (The machine code is actually BS, don't feed it to a computer.)
@@ -453,19 +459,22 @@ style="max-height: 90%; max-width: 80%;">
 
 # Playing Computer
 
-    !c
+```c
     // c
     int a = 5, b = 1;
     start:
     a = a + a;
     a = a + b;
     goto start;
+```
 
+```assembly
     // assembly
     nop;
     add A, A;
     add A, B;
     mv  PC, B;
+```
 
 
 <table style="float:left">
@@ -578,6 +587,7 @@ So, starting off from memory location 0010 (2), we have the following instructio
 We can carry them out by hand (it might be helpful to refer to the truth table for
 addition and AND):
 
+```
       0001 A
     + 0101 B
     ------
@@ -587,10 +597,11 @@ addition and AND):
     & 0101 B
     ------
       0100 B
+```
 
 W00t! Violá! QED. &#8718;. We have our answer:
 
-> What is the value of register B by the end of the program? **0100** or **5**
+> What is the value of register B by the end of the program? **0100** or **4**
 
 ----
 
