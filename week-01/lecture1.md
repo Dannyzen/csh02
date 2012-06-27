@@ -504,7 +504,7 @@ style="max-height: 90%; max-width: 80%;">
 <tr><td>0000</td><td>0000 0000 0000</td></tr>
 <tr><td>0001</td><td>0001 0000 0000</td></tr>
 <tr><td>0010</td><td>0001 0000 0001</td></tr>
-<tr><td>0011</td><td>0101 0010 0001</td></tr>
+<tr><td>0011</td><td>0110 0010 0001</td></tr>
 </table>
     
 
