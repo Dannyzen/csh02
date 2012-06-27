@@ -180,10 +180,11 @@ Some traditional names:
 
 # AND
 
-    !c
+```c
     // in c
     c = a && b; // logical
     c = a & b;  // bitwise (logical, but 1 bit at a time)
+```
 
 <table style="float:left">
 <tr><th>A<th>B</th><th>AND</th>
@@ -194,7 +195,7 @@ Some traditional names:
 </table>
 
 ![](https://github.com/ryanwitt/csh02/raw/master/week-01/img/and.png)
-[download circuit](circuits/and.cir)
+[download circuit](https://github.com/ryanwitt/csh02/raw/master/week-01/circuits/and.cir)
 
 
 Quick Quiz: What is 1010 & 1100?
@@ -203,10 +204,11 @@ Quick Quiz: What is 1010 & 1100?
 
 # OR
 
-    !c
+```c
     // in c
     c = a || b; // logical
     c = a | b;  // bitwise (logical, but 1 bit at a time)
+```
 
 <table style="float:left">
 <tr><th>A<th>B</th><th>OR</th>
@@ -217,16 +219,17 @@ Quick Quiz: What is 1010 & 1100?
 </table>
 
 ![](https://github.com/ryanwitt/csh02/raw/master/week-01/img/or.png)
-[download circuit](circuits/or.cir)
+[download circuit](https://github.com/ryanwitt/csh02/raw/master/week-01/circuits/or.cir)
 
 ----
 
 # XOR (Exclusive OR)
 
-    !c
+```c
     // in c
     c = a ^ b; // bitwise
     // no logical operator, but you can do !a != !b
+```
 
 <table style="float:left">
 <tr><th>A<th>B</th><th>XOR</th>
@@ -237,7 +240,7 @@ Quick Quiz: What is 1010 & 1100?
 </table>
 
 ![](https://github.com/ryanwitt/csh02/raw/master/week-01/img/xor.png)
-[download circuit](circuits/xor.cir)
+[download circuit](https://github.com/ryanwitt/csh02/raw/master/week-01/circuits/xor.cir)
 
 ----
 
@@ -260,7 +263,7 @@ Quick Quiz: What is 1010 & 1100?
 </table>
 
 ![](https://github.com/ryanwitt/csh02/raw/master/week-01/img/half-adder.png)
-[download circuit](circuits/half-adder.cir)
+[download circuit](https://github.com/ryanwitt/csh02/raw/master/week-01/circuits/half-adder.cir)
 
 - Does the C column look familiar?
 - Does the carry column look familiar?
@@ -286,8 +289,6 @@ style="max-height: 60%; max-width: 80%;">
 
 ----
 
-----
-
 # Full Adder
 
 <table style="float:left">
@@ -304,7 +305,7 @@ style="max-height: 60%; max-width: 80%;">
 
 <img src="https://github.com/ryanwitt/csh02/raw/master/week-01/img/full-adder.png"
 style="max-height: 60%; max-width: 80%;">
-[download circuit](circuits/full-adder.cir)
+[download circuit](https://github.com/ryanwitt/csh02/raw/master/week-01/circuits/full-adder.cir)
 
 ----
 # Chained Full Adder
@@ -324,7 +325,7 @@ Selects between multiple inputs.
 <img src="https://github.com/ryanwitt/csh02/raw/master/week-01/img/multiplexer.png"
 style="max-height: 80%; max-width: 80%;">
 
-[download circuit](circuits/multiplexer.cir)
+[download circuit](https://github.com/ryanwitt/csh02/raw/master/week-01/circuits/multiplexer.cir)
 
 
 ----
@@ -336,7 +337,7 @@ Selects between multiple outputs for a given input.
 <img src="https://github.com/ryanwitt/csh02/raw/master/week-01/img/demux.png"
 style="max-height: 80%; max-width: 80%;">
 
-[download circuit](circuits/demux.cir)
+[download circuit](https://github.com/ryanwitt/csh02/raw/master/week-01/circuits/demux.cir)
 
 ----
 
@@ -345,7 +346,7 @@ style="max-height: 80%; max-width: 80%;">
 <img src="https://github.com/ryanwitt/csh02/raw/master/week-01/img/d-latch.png"
 style="max-height: 80%; max-width: 80%;">
 
-[download circuit](circuits/d-latch.cir)
+[download circuit](https://github.com/ryanwitt/csh02/raw/master/week-01/circuits/d-latch.cir)
 
 - Fast
 - Used for registers, cache 
@@ -358,7 +359,7 @@ style="max-height: 80%; max-width: 80%;">
 <img src="https://github.com/ryanwitt/csh02/raw/master/week-01/img/dram.png"
 style="max-height: 80%; max-width: 80%;">
 
-[download circuit](circuits/dram.cir)
+[download circuit](https://github.com/ryanwitt/csh02/raw/master/week-01/circuits/dram.cir)
 
 - Dense
 - Slow
@@ -389,7 +390,7 @@ style="max-height: 90%; max-width: 80%;">
 <img src="https://github.com/ryanwitt/csh02/raw/master/week-01/img/1-bit-alu.png"
 style="max-height: 80%; max-width: 80%;">
 
-[download circuit](circuits/1-bit-alu.cir)
+[download circuit](https://github.com/ryanwitt/csh02/raw/master/week-01/circuits/1-bit-alu.cir)
 
 ----
 
@@ -419,6 +420,7 @@ style="max-height: 90%; max-width: 80%;">
         instruction = memory[program_counter]
         data = memory[get_data_address(instruction)]
         execute(instruction, data)
+        program_counter += 1
 ```
         
 
@@ -475,7 +477,6 @@ style="max-height: 90%; max-width: 80%;">
     add A, B;
     mv  PC, B;
 ```
-
 
 <table style="float:left">
 <tr><th>Instruction</th><th>Action</th><th>Opcode</th></tr>
@@ -559,8 +560,6 @@ the operands, which is how most assembly language looks:
 <tr><td>0011</td><td>and B, A; # B = B & A</td></tr>
 </table>
 
----
-
 Second, notice that your esteemed instructor has plaid a practical joke on
 you! The program counter is set to `0010` (2 in decimal), which means that
 that the crazy instruction at the beginning does not matter! The moral of 
@@ -576,13 +575,13 @@ He might have picked the combo to your safe, instead!).
 </table>
 
 
-----
-
 So, starting off from memory location 0010 (2), we have the following instructions:
 
 
+```
     add A, B; # add the contents of B to the contents of A, store in A
     and B, A; # and the contents of A with the contents of B, store in B
+```
 
 We can carry them out by hand (it might be helpful to refer to the truth table for
 addition and AND):
